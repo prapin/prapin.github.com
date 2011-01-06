@@ -12,7 +12,7 @@ CREATE TABLE `memento` (
   `harmonie` TEXT DEFAULT NULL,
   `missy` TEXT DEFAULT NULL,
   `selection` integer
-);
+, "chanteur" TEXT, "commentaire" TEXT);
 INSERT INTO "memento" VALUES(1,'4VH','Actualités','Albert Vidalie','Stéphane Golmann','Gilbert Bezençon','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4 \partial 4 r4
 	<< { d2 e e d d e } \\ 
@@ -33,11 +33,11 @@ Sur la rive deux enfants s''enlacent en souriant.
 
 3. Cent mineurs crient sous le poids d''un continent,
 Là-haut passe un régiment, il y aura dix survivants.
-Le soleil luit, le soleil, le soleil luit.',NULL,'actuel',1);
+Le soleil luit, le soleil, le soleil luit.',NULL,'actuel',1,NULL,NULL);
 INSERT INTO "memento" VALUES(2,'4VH','Ainsi parlait l''ecclésiaste','Géo-H. Blanc','Robert Mermoud',NULL,'\new ChoirStaff 
 	\new Staff { \clef F     \key g \major \time 6/8 \partial 8*3
 	<< { fis,4 fis8 fis4 fis8 fis fis fis fis4. fis4 fis8 fis4 fis8 fis fis fis fis fis fis fis fis fis } \\ 
-	   { b,4 b8 b4 b8 b b c b4. b4 b8 b4 b8 b b c b b c b b c } >> }',NULL,NULL,'restes',NULL);
+	   { b,4 b8 b4 b8 b b c b4. b4 b8 b4 b8 b b c b b c b b c } >> }',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(3,'4VH','Amazing grace','John Newton',NULL,'Olivier Nusslé','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 3/4 \partial 4
 	<< { d,4 b''2 d8 b d2 c4 b2 c4 b2 d4 e2 d8 b d2 cis4} \\ 
@@ -64,7 +64,7 @@ and grace will lead me home.
 4. Praise God, praise God, praise God,
 Praise God, praise God, praise God,
 Praise God, praise God, praise God,
-was blind but now I see.',NULL,'ancien',NULL);
+was blind but now I see.',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(4,'4VH','Ami, dans cette vie',NULL,NULL,'Roland Demieville','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \minor \time 2/2 \partial 4
 	<< { g c b c d es2 es4 f8 es d4 c d b c2. g4 } \\ 
@@ -87,7 +87,7 @@ en noyant le chagrin.
 En buvant de ce jus divin du bonheur, nous sommes certains
 en noyant le chagrin.
 
-3. <i>Comme 1.</i>',NULL,'répertoire',NULL);
+3. <i>Comme 1.</i>',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(5,'4VH','A toi mon père','Charly Torche','Charly Torche',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 3/4 \partial 8*2
 	<< { d,8 d g4. a8 b c d4 b g8 g e''4 d c } \\ 
@@ -126,7 +126,7 @@ Le front tout jauni de poussière
 Las, mais le cœur content
 Dans l''humide moiteur d''un automne essoufflé
 Tu construit ton bonheur
-Refrain',NULL,'répertoire',NULL);
+Refrain',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(6,'4VH','Aveugle (l'')',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \minor \time 2/4 
 	<< { c2~c c~c } \\ 
@@ -134,7 +134,7 @@ INSERT INTO "memento" VALUES(6,'4VH','Aveugle (l'')',NULL,NULL,NULL,'\new ChoirS
 	\new Staff { \clef F \key c \minor
 	<< { r2 r r r c,8 g'' as g bes4 as} \\ 
 	   { c,4. b8 c2 c4. b8 c2 c4 b c4. d8 } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(7,'4VH','Beaux songes','René Morax','Nicolaï Schlupp',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \minor \time 4/4 \partial 8*1
 	<< { r8 r2.. c8 c2 b4 b8 c d4. c8 d b c d } \\ 
@@ -142,7 +142,7 @@ INSERT INTO "memento" VALUES(7,'4VH','Beaux songes','René Morax','Nicolaï Schl
 	\new Staff { \clef F \key a \minor r8 r2..
 	<< { e8 e2 f4 d8 e f4. e8 f d g f  } \\ 
 	   { a,8 a2 a4 a8 a a4. a8 a a a b } >> }
->>','Refrain:',NULL,'restes',NULL);
+>>','Refrain:',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(8,'4VH','Bonsoir princesse','Emile Gardaz','Dominique Gesseney-Rappo',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 3/4 r2.
 	<< { r2. b4 a4. g8 e''4. e8 e e e2 r8 d } \\ 
@@ -150,7 +150,7 @@ INSERT INTO "memento" VALUES(8,'4VH','Bonsoir princesse','Emile Gardaz','Dominiq
 	\new Staff { \clef F \key c \major
 	<< { g2.~g2.~g2~g8 r8 g2. f2. } \\ 
 	   { g2.~g2.f2~f8 r8 e2. f } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(9,'4VH','Chanson à boire','M. Carré & L. Battu','Jacques Offenbach',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 2/4
 	<< { g8 g g g d'' b16 a a8 g g g g g d'' c16 b a4 } \\ 
@@ -191,7 +191,7 @@ Vive le vin rose, rouge ou bleu
 Quand j''ai soif, je suis moins qu''un homme, 
 Quand j''ai bu, je suis presqu'' un dieu.
 Refrain
-',NULL,'restes',NULL);
+',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(10,'4VH','Chanson de route',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key bes \major \time 2/4 \partial 8*2
 	<< { bes4 g4.. a16 bes4 a8. g16 a4 d d bes g4.. a16 } \\ 
@@ -199,7 +199,7 @@ INSERT INTO "memento" VALUES(10,'4VH','Chanson de route',NULL,NULL,NULL,'\new Ch
 	\new Staff { \clef F \key bes \major
 	<< { bes4 g4.. a16 bes4 a8. g16 a4 d d bes g4.. d16  } \\ 
 	   { bes''4 g4.. a16 bes4 a8. g16 a4 d d bes g4.. d16  } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(11,'4VH','Chanson du croquant (la)','Jacques Bron','Patrick Bron',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 6/8 \partial 8*3
 	<< { d,8 e fis g4 d8 g4 d8 g4. g8 a b c4 b8 a4 g8 } \\ 
@@ -207,7 +207,7 @@ INSERT INTO "memento" VALUES(11,'4VH','Chanson du croquant (la)','Jacques Bron',
 	\new Staff { \clef F \key g \major r4.
 	<< { g''4. d e e e dis4 dis8 } \\ 
 	   { g,4. d'' c b a b4 b8 } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(12,'4VH','Chant de corsaires',NULL,'Dominique Gesseney-Rappo',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key b \minor \time 6/8
 	<< { b4 d8 cis d e d4 cis8 b4 fis8 b4 d8 cis d e d4 cis8 b4. } \\ 
@@ -253,7 +253,7 @@ Vite en mer et sans retard,
 Faisons la guerre
 À l''Angleterre.
 Car c''est le fameux Jean Bart
-Qui nous commandera le départ.',NULL,'répertoire',NULL);
+Qui nous commandera le départ.',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(13,'4VH','Chant d''été','J.-L. Moratel','J.-L.-F. Gluck',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 6/8 \partial 8
 	<< { e,8 cis''4 cis8 cis b cis d4 b8 gis4 e8 a4 a8 a gis a } \\ 
@@ -267,7 +267,7 @@ O Dieu de la nature, mon chant s''élève à Toi (bis).
 Tu grondes dans l''orage, tu brilles dans la fleur (bis).
 3. Je trouve à chaque place les dons de Ton amour, 
 Mon cœur serait de glace s''il t''oubliait un jour (bis).
-',NULL,'répertoire',NULL);
+',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(14,'4VH','Chantons, rions, la vie est belle','Robert Mermoud',NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \minor \time 6/8 \partial 8*3
 	<< { a8 e a c4. b8 c b a4 a8 a e a c4. b8 c b } \\ 
@@ -275,7 +275,7 @@ INSERT INTO "memento" VALUES(14,'4VH','Chantons, rions, la vie est belle','Rober
 	\new Staff { \clef F \key a \minor r4. r 
 	<< { g8 g g a4 g8 } \\ { g8 g g a4 g8 } >> r4.
 	r4. << { g8 g g  } \\ { g8 g g  } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(15,'4VH','Cocorico','Bernard Ducarroz','Charly Torche',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key f \major \time 2/4 r8
 	<< { c8 c8. d16 c2 r8 c8 bes8. a16 g4 f  } \\ 
@@ -283,7 +283,7 @@ INSERT INTO "memento" VALUES(15,'4VH','Cocorico','Bernard Ducarroz','Charly Torc
 	\new Staff { \clef F \key f \major r2 r8
 	<< { c8 c8. d16 c8 c f8. f16 d4 e } \\ 
 	   { c8 c8. d16 c8 c d8. d16 bes4 c } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(16,'4VH','Complainte de Pablo Neruda','Louis Aragon','Jean Ferrat','Pierre Huwiler','\new Staff { \clef "G_8" \key g \minor \time 6/8 \partial 8*2
 	   bes8 a g4 g f8 es d4 bes8 r bes'' a g4 g8 f f4 d4. r8 d8 d }','1. Je vais dire la légende
 De celui qui s''est enfui
@@ -341,7 +341,7 @@ Silencieux solitaire
 Et dans la foule chantant
 Comment croire. <i>(pause)</i>
 
-Refrain',NULL,'répertoire',NULL);
+Refrain',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(17,'4VH','Complainte du mercenaire (la)','Jean Cuttat','Jean Binet',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key es \major \time 2/4
 	<< { c8. d16 c8 bes es4. f8 c4 bes es8. f16 g8 f } \\ 
@@ -368,13 +368,13 @@ Refrain
 Sont les roses de mon sang,
 Au jardin de ma souffrance,
 Cueillez-les pour mes enfants.
-Refrain',NULL,'répertoire',NULL);
+Refrain',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(18,'4VH','Contrastes','Gilbert Bezençon','Gilbert Bezençon',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key f \minor \time 4/4 \partial 8*2
 	 c,8 c f4. f8~f g as bes \time 3/4 c4. c8 c c des4 des8 des des des  }
 	\new Staff { \clef F \key f \minor 
 	 r4 r c,8 c f4 f8 g as4. as8 bes c c4 c8 bes as as }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(19,'4VH','Couleur des rois (la)','Aloys Lauper','Dominique Gesseney-Rappo',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key e \minor \time 3/4 \partial 8*2
 	<< { d8 cis d4 d8 e e d d2 b8 a b4. b8 d c b4. c8 e d } \\ 
@@ -382,7 +382,7 @@ INSERT INTO "memento" VALUES(19,'4VH','Couleur des rois (la)','Aloys Lauper','Do
 	\new Staff { \clef F \key e \minor r4
 	<< { b2 b4 a2. g2 g4 fis2 } \\ 
 	   { g2 g4 fis2. e2 e4 d2 } >> r4 }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(20,'4VH','Dans le soleil et dans le vent','M. Jourdan','D. Novrovic','Roland Demieville','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 4/4
 	<< { c1 c c2 b } \\ 
@@ -417,7 +417,7 @@ Coda:
 Tournent les ailes dans la lumière
 Tourne le temps, rien n''a changé
 Mais dans mon cœur, depuis hier
-Le vieux moulin s''est arrêté.',NULL,'ancien',NULL);
+Le vieux moulin s''est arrêté.',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(21,'4VH','Devant la flamme','Monique Laederach','Robert Mermoud',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \minor \time 3/4
 	<< { d4 d c a2 c4 a2 d8 e f e d4 c d2 d4 f4 e d } \\ 
@@ -425,7 +425,7 @@ INSERT INTO "memento" VALUES(21,'4VH','Devant la flamme','Monique Laederach','Ro
 	\new Staff { \clef F \key a \minor 
 	<< { d,4 d e f2 e4 f2 f8 g bes g f4 e d2 d4 a'' g f } \\ 
 	   { d4 d a d2 a4 d2 d8 c bes c d4 a <d d,>2 <d d,>4 f c d } >> }
->>',NULL,NULL,'actuel',NULL);
+>>',NULL,NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(22,'4VH','Dostoino ièst',NULL,'Dmitry Bortniansky','Léon Jordan','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 4/4 \partial 4
 	<< { cis4 cis2. b4 b2 r2 a a4 b cis4. cis8 cis4 cis} \\ 
@@ -433,7 +433,7 @@ INSERT INTO "memento" VALUES(22,'4VH','Dostoino ièst',NULL,'Dmitry Bortniansky'
 	\new Staff { \clef F \key a \major 
 	<< { e4 e2. e4 e2 r2 fis2 fis4 e e4. e8 e4 e} \\ 
 	   { a,4 a2. <e e''>4 <e e''>2 r2 <fis fis''>2 <fis fis''>4 <e e''> a4. a8 a4 a } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(23,'4VH','Entre Alpes et Jura','Alain Devalloné','Louis-Marc Crausaz',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key d \minor \time 4/4 \partial 4*2
 	<< { a8 d e4 f f r8 f e d e4 e a,8 a e'' e \time 3/4 d4 c8 c bes bes } \\ 
@@ -441,7 +441,7 @@ INSERT INTO "memento" VALUES(23,'4VH','Entre Alpes et Jura','Alain Devalloné','
 	\new Staff { \clef F     \key d \minor 
 	<< { a8 a a4 c bes r8 bes g g g4 a e8 e a a g4 f8 f e d } \\ 
 	   { a8 d e4 d d r8 d8 d d d4 c c8 c a a a4 a8 a a a } >> }
->>',NULL,NULL,'actuel',NULL);
+>>',NULL,NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(24,'4VH','Foutus corsaires','Robert F. Rudin','Charly Torche',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \minor \time 6/8 \partial 8*3
 	<< { es8 d es c4 c8 bes4 bes8 g4. es8 f g bes4 as8 g4 f8 } \\ 
@@ -449,7 +449,7 @@ INSERT INTO "memento" VALUES(24,'4VH','Foutus corsaires','Robert F. Rudin','Char
 	\new Staff { \clef F \key c \minor 
 	<< { g8 f g es4 es8 d4 d8 es4. es8 d es d4 d8 d4 b!8 } \\ 
 	   { c8 c c c4 c8 d4 d8 es4. es8 d c bes4 bes8 b4 g8 } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(25,'4VH','Gaude mater Polonia',NULL,NULL,'Grzegorz Gerwazy Gorczycki','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key des \major \time 4/4 
 	<< { des2 es8 des c des es2 des4 des es8 f ges f es4 des des1 } \\ 
@@ -463,7 +463,7 @@ INSERT INTO "memento" VALUES(25,'4VH','Gaude mater Polonia',NULL,NULL,'Grzegorz 
 	Laude frequenta vigili. 
 	
 	2. <i>Reprise à 1</i>
-	Amen.',NULL,'restes',NULL);
+	Amen.',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(26,'4VH','Hei! Gitan','Léon Jordan',NULL,'Léon Jordan','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \minor \time 2/4 r2 r r 
 	<< { d,4 g bes d8. c16 } \\ 
@@ -471,7 +471,7 @@ INSERT INTO "memento" VALUES(26,'4VH','Hei! Gitan','Léon Jordan',NULL,'Léon Jo
 	\new Staff { \clef F \key g \minor
 	<< { d,4 e8 fis g4 fis8 g a g f es d2 d4. d8 } \\ 
 	   { d4 e8 fis g4 fis8 g a g f es d2 g,4. g8 } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(27,'4VH','Hush','Traditionnel',NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key bes \major \time 2/4
      f4~f16 g bes8 bes2 d4~d16 c d8 bes2 }
@@ -487,7 +487,7 @@ Oh my Lord, Oh my Lord what shall I do?
 Oh my Lord what shall I do, what shall I do? 
 3. I''m so glad I''ve got my ligion in time (3x)
 Oh my Lord what shall I do? 
-',NULL,'restes',NULL);
+',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(28,'4VH','Hymne à la nuit',NULL,'J.P.Rameau',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 3/4 
 	<< { cis4 b2 e4 cis a d2 cis8 b cis2 a4 a''4 a8 gis fis e } \\ 
@@ -505,7 +505,7 @@ C''est le calme des cieux qui descend sur la terre.
 Vient nous soumettre tous à ses égales lois.
 Il prête aux bergers comme au rois
 L''azur de ton manteau tout parsemé d''étoiles.
-<i>Bouche fermée</i>',NULL,'restes',NULL);
+<i>Bouche fermée</i>',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(29,'4VH','Hymne vaudois','Samuel-Henri Rochat','Traditionnel',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 4/4 \partial 4*1
 	<< { g4 c4. g8 e e g8. g16 c4 c r e d4. c8 b a g f e2 r4 g } \\ 
@@ -564,7 +564,7 @@ Le Vaudois, plein de ton amour,
 Puisse t''adresser chaque jour
 L''hymne de sa reconnaissance :
 Refrain
-',NULL,'entendu',NULL);
+',NULL,'entendu',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(30,'4VH','Il est un vieux pommier',NULL,NULL,'Joseph Bovet','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 2/4 \partial 8*1 
 	<< \repeat volta 2 { g8 g e'' e dis e4 e8 e16 dis e4 e8 dis e4. } \\ 
@@ -587,7 +587,7 @@ Quand l''automne est venu...
 Et le mettre en fagots, ...
 5. Il cuira nos " cuchôles " ... (bis) 
 Voici la bénichon, ...	
-',NULL,'répertoire',NULL);
+',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(31,'4VH','Inspiration','Propertius','Nicolaï Schlupp',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \minor \time 4/4
 	<< { bes2 c4 d | d2 c4 g'' | g2 f4 d | ees2. d4 } \\ 
@@ -598,7 +598,7 @@ INSERT INTO "memento" VALUES(31,'4VH','Inspiration','Propertius','Nicolaï Schlu
 >>','Quaeritis, unde mihi totiens scribantur amores,
 unde meus ueniat mollis in ora liber?
 non haec Calliope, non haec mihi cantat Apollo:
-ingenium nobis ipsa puella facit.',NULL,'ancien',NULL);
+ingenium nobis ipsa puella facit.',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(32,'4VH','In vino veritas','Henri Devain','Friedrich Silcher','Jean-Claude Guermann','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key bes \major \time 2/2 \partial 4 r4 r2 r4
 	<< { f,4 bes2 bes4 d es es c f d2 } \\ 
@@ -606,7 +606,7 @@ INSERT INTO "memento" VALUES(32,'4VH','In vino veritas','Henri Devain','Friedric
 	\new Staff { \clef F \key bes \major 
 	<< { bes4 a g f es d2 g g4 g f f f2 r4 bes4 } \\ 
 	   { bes4 a g f es d2 g es4 es f f, bes2 r4 bes''4 } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(33,'4VH','J''imagine','Alain Devalloné','Dominique Gesseney-Rappo',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 3/4 \partial 4*1
 	<< { a4 b b8 b b b d4 d r8 d e4. e8 e d d4. r8 b a  } \\ 
@@ -614,7 +614,7 @@ INSERT INTO "memento" VALUES(33,'4VH','J''imagine','Alain Devalloné','Dominique
 	\new Staff { \clef F \key g \major
 	<< { d,4 g g8 g a a g4 g r8 g8 g4. g8 g g g4. r8 b,8 d } \\ 
 	   { d4 g g8 g a g fis4 fis r8 e8 d4. c8 e g g4. r8 b,8 d  } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(34,'4VH','Joska, la rossa','Carlo Gemignani','Bepi De Marzi',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key e \minor \time 4/4
 	<< { r2 r8 b b b e4 e g8 fis e d e4 e4~e8 e fis e } \\ 
@@ -663,14 +663,14 @@ Joska, Joska, Joska,
 Salta la mura!
 Fermate là! Oh.
 <i>(3x accelerando)</i>
-Fermate là',NULL,'actuel',NULL);
+Fermate là',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(35,'4VH','Lion est mort ce soir (le)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4 \partial 8*1
 	     r8 r1 r2 d,4 d d2 r2 r1  } 
 	\new Staff { \clef F     \key g \major 
 	<< { g8 g4 b r4. g8 g4 g r4. g8 g4 b r4. b8 fis4 fis r4. g8 } \\ 
 	   { g,8 g4 g r4. e8 e4 e r4. g8 g4 g r4. g8 d4 d r4. g8 } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(36,'4VH','Long chemin (le)','Emile Gardaz','Charly Torche',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \minor \time 2/4 \partial 4
 	<< { r4 r2 r r r4 g8 g } \\ 
@@ -678,14 +678,14 @@ INSERT INTO "memento" VALUES(36,'4VH','Long chemin (le)','Emile Gardaz','Charly 
 	\new Staff { \clef F \key c \minor 
 	<< { g8 g g4 g8 g g4 g g8 g g g g4 g8 g } \\ 
 	   { r4 r2 r r r4 g8 g } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(37,'4VH','Maçons du vent','Bernard Ducarroz','Pierre Huwiler',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \minor \time 2/2
 	 g4 g bes bes a8 g f g a2 g4 g8 g bes4. bes8 c bes a g a2 }
 	\new Staff { \clef F \key g \minor 
 	<< { g4 g g g f8 e d e f2 g4 g8 g g4. g8 g g g g fis2 } \\ 
 	   { g4 g d d d d d2 g4 f8 f es4. es8 es es es es d2 } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(38,'4VH','Maîtresse du soldat (la)','Charles Cros','Henri Baeriswyl',NULL,'\new Staff { \clef F \key e \minor \time 4/4 
 	<< { r1 r e,8 r fis r g4~fis8. fis16 e8 r d8 r e2 } \\ 
 	   { e1 e e e } >> }','Rm, rm, la, la, la...
@@ -707,7 +707,7 @@ Il oubliera vos caresses
 Car il pense que sa maîtresse à jamais
 La, la, la...
 Que sa maîtresse à jamais
-C''est la mort',NULL,'actuel',NULL);
+C''est la mort',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(39,'4VH','Marins des étoiles','Bernard Ducarroz','Francis Volery',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \minor \time 6/4 \partial 8*7
 	<< { d,8 g fis g a bes c d2~d8 d d d c c d d } \\ 
@@ -750,7 +750,7 @@ Dans le roulis de nos chansons
 Il faut des vagues avec des mots 
 Pour naviguer à la maison
 Refrain
-',NULL,'restes',NULL);
+',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(40,'4VH','Mélodie pavane','Bernard Ducarroz','Francis Volery',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 3/4 \partial 16*4
 	<< { g16 b d g fis4 e d16 c b c d2 a16 b c d } \\ 
@@ -758,7 +758,7 @@ INSERT INTO "memento" VALUES(40,'4VH','Mélodie pavane','Bernard Ducarroz','Fran
 	\new Staff { \clef F \key g \major
 	<< { d,4 d d d8 d d4 d c8 f } \\ 
 	   { g,4 g g g8 g g4 g c8 a } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(41,'4VH','Mi-Si','Emile d''Orlan','Roland Corbaz',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 4/4
 	<< { e,8 b''4. r2 e,8 b''16 b b4 r2 e,8 b'' b e b a b4~b2 } \\ 
@@ -766,7 +766,7 @@ INSERT INTO "memento" VALUES(41,'4VH','Mi-Si','Emile d''Orlan','Roland Corbaz',N
 	\new Staff { \clef F     \key c \major 
 	<< { r2 es8 bes''4. r2 es,8 bes''16 bes bes4 r1 e,8 e b4  } \\ 
 	   { r2 es8 bes''4. r2 es,8 bes''16 bes bes4 r1 e,8 a, e4  } >> }
->>',NULL,NULL,'déchiffré',NULL);
+>>',NULL,NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(42,'4VH','Mnogaia Leta',NULL,'Dmitry Bortniansky',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 4/4 
 	<< { c2 c4 c c4. b8 b2 a a4 a a4. gis8 gis2 a4 gis a b  } \\ 
@@ -774,7 +774,7 @@ INSERT INTO "memento" VALUES(42,'4VH','Mnogaia Leta',NULL,'Dmitry Bortniansky',N
 	\new Staff { \clef F     \key c \major 
 	<< { e2 e4 e e4. d8 d2 c c4 c c4. b8 b2 c4 b c d } \\ 
 	   { c2 c,4 e g2 g a a,4 c e2 e f1 } >> }
->>',NULL,NULL,'déchiffré',NULL);
+>>',NULL,NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(43,'4VH','Musique','Jyaleen','Dominique Gesseney-Rappo',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 3/4
 	<< { e,4 e4. a8 a4. a8 gis a cis4 cis4. r8 d2. cis2 b4} \\ 
@@ -782,7 +782,7 @@ INSERT INTO "memento" VALUES(43,'4VH','Musique','Jyaleen','Dominique Gesseney-Ra
 	\new Staff { \clef F \key a \major
 	<< { e4 e4. a8 a4. a8 gis fis gis4 gis8 gis gis a b4. cis8 b a fis4 fis8 e fis gis } \\ 
 	   { e4 e4. a8 a4. a8 gis fis cis4 cis4. r8 b2. b } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(44,'4VH','My Lord, what a morning',NULL,NULL,'Olivier Nussle','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4
 	<< { d4 d2 c8 d b4 b2. g''4 g2 g8 d d4 d2. } \\ 
@@ -797,7 +797,7 @@ tars begin to fall
 1. I''ll hear de trumpet sound
 To wake de nations underground
 Lookin'' my God''s right hand
-',NULL,'restes',NULL);
+',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(45,'4VH','Notre-Dame de ma terre','Jean-Claude Hurni','Jean-Claude Hurni',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \minor \time 4/4 \partial 8*2
 	<< { g8 g g4. f8 es d es4 g c8 c bes bes c d \time 2/4 es4 g,8 g} \\ 
@@ -805,7 +805,7 @@ INSERT INTO "memento" VALUES(45,'4VH','Notre-Dame de ma terre','Jean-Claude Hurn
 	\new Staff { \clef F \key c \minor
 	<< { g8 g g4. f8 es d es4 es c8 es d es f as g4 g8 f } \\ 
 	   { g8 g g f es f es d f d c4 c8 c bes bes as f c''4 g''8 f } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(46,'4VH','Nous allons chercher le vent',NULL,NULL,'Dominique Gesseney-Rappo','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \minor \time 4/4 \partial 8*3
 	<< { bes8 a8. g16 d''4 d r8 bes8 a8. g16 es''4 c r8 c d8. es16 } \\ 
@@ -835,7 +835,7 @@ Sont ivres de joie et de vent
 Dans l''ouragan, les cœurs qui chantent 
 Sont délivrés de leurs tourments. 
 Refrain
-',NULL,'répertoire',NULL);
+',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(47,'4VH','Novembre',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key f \major \time 3/4 \partial 4
 	<< { a4 g4. g8 g4 bes2 bes4 a4. a8 a4 d2 d4 f2. } \\ 
@@ -843,7 +843,7 @@ INSERT INTO "memento" VALUES(47,'4VH','Novembre',NULL,NULL,NULL,'\new ChoirStaff
 	\new Staff { \clef F \key f \major
 	<< { f,4 f f e d2 g4 g g fis f2 bes4 bes2. } \\ 
 	   { c,4 c4. c8 c4 g2 d''4 d4. d8 d4 bes2 bes4 g''2 g4 } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(48,'4VH','O Keltia',NULL,'Glenmor','René Abjean','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4 
 	<< { r1 r2 d4. b16 e d4. d8 d4 b } \\ 
@@ -866,7 +866,7 @@ Lez-Breizh a zo distro
 an avel hag ar mor
 sur a gano
 
-O Keltia',NULL,'ancien',NULL);
+O Keltia',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(49,'4VH','Ô nuit brillante',NULL,NULL,'Joseph Bovet','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key b \minor \time 6/8 
 	<< { b4. cis8 b cis d4 cis8 b4 r8 d4 cis8 b a cis b4.~b4 } \\ 
@@ -892,7 +892,7 @@ Refrain
 3. Louanges, louanges, 
 Gloire au plus haut des cieux!
 Chantons avec les anges: 
-Paix sur terre en tous lieux!',NULL,'restes',NULL);
+Paix sur terre en tous lieux!',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(50,'4VH','Ô petit pays','Gonzague De Reynold','Carlo Hemmerling',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key es \major \time 4/4 
 	<< { bes2 c4 c8. c16 d2 d4. es8 c2.. c8 bes2 r4 bes8 as } \\ 
@@ -918,7 +918,7 @@ Quand l’heure viendra, on me chantera
 Tes vieux airs qui font douce la mort
 Et j’irai comme un enfant s’endort
 Vers un ciel qui te ressemblera,
-Vers un ciel qui te ressemblera.',NULL,'répertoire',NULL);
+Vers un ciel qui te ressemblera.',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(51,'4VH','Pays que j''aime (le)','Emile Gardaz','Robert Mermoud',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key d \minor \time 2/2 \partial 4*2
 	<< { a4 bes c2 f4 es d2 g4 f e d e2 f c4 c } \\ 
@@ -947,9 +947,9 @@ Mes amis de naguère, que sont-ils devenus ?
 Refrain
 Coda:
 Droit devant, Droit devant ... Soi.
-',NULL,'ancien',NULL);
+',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(52,'4VH','Petit prince, mon ami','Francis Pittier','Sylvain May',NULL,'\new Staff { \clef "G_8" \key c \minor \time 4/4
-	  c,8 c16 d es8 es d d c4 \time 5/4 as''8 f d as'' g g16 f g8 es c4 }',NULL,NULL,'ancien',NULL);
+	  c,8 c16 d es8 es d d c4 \time 5/4 as''8 f d as'' g g16 f g8 es c4 }',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(53,'4VH','Pompiers du village (les)','Gil Pidoux','Dominique Gesseney-Rappo',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 4/4 \partial 8*3
 	<< { c8 b g c2 b4 g a2 a8 b c e e2 d4 a } \\ 
@@ -957,10 +957,10 @@ INSERT INTO "memento" VALUES(53,'4VH','Pompiers du village (les)','Gil Pidoux','
 	\new Staff { \clef F \key c \major r4.
 	<< { e8 e e e e e d d c4 f f g f2 f } \\ 
 	   { c8 c c c c c b b a4 f f'' e d2 d } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(54,'4VH','Prière du loup','François Rémy','Michel Corboz',NULL,'\new Staff { \clef "G_8" \key f \minor \time 4/4
 	   c,4 c'' as g f g8 as des,4 des 
-	   c f \times 2/3 {es8 f g} as4  }',NULL,NULL,'actuel',NULL);
+	   c f \times 2/3 {es8 f g} as4  }',NULL,NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(55,'4VH','Prière du Rütli','René Morax','Gustave Doret',NULL,'\new Staff { \clef F \key c \major \time 4/4 \partial 8*2
 	 c,8 c g''2 c,4 d g,2. g8 g c4 d e c g''2 a }','Eternel notre Dieu,
 Nous t''offrons librement
@@ -979,7 +979,7 @@ Ici nous le jurons:
 Libre, Libre!
 Comme les pères,
 Les fils te maintiendront!
-Amen!',NULL,'restes',NULL);
+Amen!',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(56,'4VH','Quand l''oiseau chante','Pierre Delanoë','Michel Fugain','Dominique Gesseney-Rappo','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \minor \time 2/2 
 	<< { g4 g d'' d c bes c d bes2 a g1 } \\ 
@@ -1009,9 +1009,9 @@ Et la liberté n''est plus qu''une ombre
 La chanson lonla lonlère
 Va de maison en prison
 Annoncer le temps de la lumière
-Refrain',NULL,'restes',NULL);
+Refrain',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(57,'4VH','Quand tout dort',NULL,NULL,NULL,'\new Staff { \clef F \key a \minor \time 4/4 \partial 4*2
-	   a,4 c d2 d8. e16 d8. c16 a8. g16~g8 r8 a4 c }',NULL,NULL,'restes',NULL);
+	   a,4 c d2 d8. e16 d8. c16 a8. g16~g8 r8 a4 c }',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(58,'4VH','Que tu es beau, mon village','Marie-Noël Fornage','Léon Jordan',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key f \minor \time 4/4 \partial 8*3
 	<< { c,8 f g as4 g8 f c''4 bes8 as c4 c r8 c8 des f es es des c bes bes as bes } \\ 
@@ -1019,7 +1019,7 @@ INSERT INTO "memento" VALUES(58,'4VH','Que tu es beau, mon village','Marie-Noël
 	\new Staff { \clef F \key f \minor
 	<< { c,8 f g as4 g8 f c''4 bes8 as c4 c r8 c8 bes as g f g as f f f f } \\ 
 	   { c8 f g as4 g8 f c''4 bes8 as c4 c r8 c8 bes as g f g as des, bes c des } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(59,'4VH','Réveillez-vous Picards',NULL,NULL,'François-Auguste Gevaert','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \minor \time 2/2 \partial 4
 	<< { a4 a a a a e''2. fis4 g4. a8 g4 fis e2. e4 e e e e } \\ 
@@ -1062,7 +1062,7 @@ Les Picards les ont bus,
 Les Flamands les paîront 
 Quatre patards la pinte 
 Ou bien battus seront.
-',NULL,'restes',NULL);
+',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(60,'4VH','Saltimbanques','Jacques Bron','Patrick Bron',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \minor \time 2/2 \partial 8*1
 	<< { d,8 a'' a d d a4. a8 c c c d d4 r8 d, a'' a d d a4. a8 } \\ 
@@ -1070,7 +1070,7 @@ INSERT INTO "memento" VALUES(60,'4VH','Saltimbanques','Jacques Bron','Patrick Br
 	\new Staff { \clef F \key a \minor 
 	<< { d,8 a'' a e e f4. f8 a a a b b4 r8 d,8 a'' a e e f4. f8 } \\ 
 	   { d8 a'' a a, a d4. d8 f f f g g4 r8 d a'' a a, a d4. d8 } >> }
->>',NULL,NULL,'actuel',NULL);
+>>',NULL,NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(61,'4VH','Sera sper il lag, la','Flurin Camathias','Gion B. Casanova',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 4/4 \partial 8*3
 	<< { a8 a b cis4. cis8 b cis d b cis4 cis r8 cis8 d e } \\ 
@@ -1086,7 +1086,7 @@ INSERT INTO "memento" VALUES(61,'4VH','Sera sper il lag, la','Flurin Camathias',
 	2. E giu da tchiel da tschiel las stailas biaras
 	migaivel miran giu el stgir
 	miu cor tiaille aunc  empiaras
-	va era ti tier dultsch dumir',NULL,'répertoire',NULL);
+	va era ti tier dultsch dumir',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(62,'4VH','Sérénade sans guitare',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4
 	<< { e,8 fis g a b4 e8 d b2 b e,8 fis g a b4 e8 d c2 c } \\ 
@@ -1094,8 +1094,8 @@ INSERT INTO "memento" VALUES(62,'4VH','Sérénade sans guitare',NULL,NULL,NULL,'
 	\new Staff { \clef F \key g \major
 	<< { e,8 fis g a b4 a8 g a2 a e8 fis g a b4 a8 a a2 a } \\ 
 	   { e8 fis g a b4 a8 g fis2 fis e8 fis g a b4 b,8 b e2 e} >> }
->>',NULL,NULL,'répertoire',NULL);
-INSERT INTO "memento" VALUES(63,'4VH','Signore delle cime La maj (orig.) Sol maj (bleu)| Alain: en sol','Bepi De Marzi','Bepi De Marzi',NULL,'\new ChoirStaff 
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(63,'4VH','Signore delle cime','Bepi De Marzi','Bepi De Marzi',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 4/4 
 	<< { cis2 cis4 cis e2 e4. e8 a4 a a a gis2 gis fis fis4 fis } \\ 
 	   { cis2 cis4 cis b2 b4. b8 cis4 cis cis dis e2 e d d4 d } >> }
@@ -1112,14 +1112,15 @@ lascialo andare per le tue montagne.
 copri col bianco tuo soffice mantello
 il nostro amico, nostro fratello
 su nel Paradiso, su nel Paradiso
-lascialo andare per le tue montagne.',NULL,'répertoire',NULL);
+lascialo andare per le tue montagne.',NULL,'répertoire',NULL,NULL,'La majeur sur partition originale, mais en sol majeur dans recueil bleu.
+Alain Devalonnée le prend en sol.');
 INSERT INTO "memento" VALUES(64,'4VH','S''ils reviendront','Emile Gardaz','André Ducret',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 6/8 \partial 8*1
 	  r8 r4. d4. cis2. r4. e4. a,2. }
 	\new Staff { \clef F \key g \major
 	<< { g8 g4 b8 b4 g8 a4. a4 e8 g4 a8 g4 e8 fis4.~fis4 e8 } \\ 
 	   { r8 r2. r4. a,4. c2. d } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(65,'4VH','Tcherneï goro',NULL,NULL,'Chr. Mandov','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4
 	<< { d4. d8 d d4. e e8 e d4. \time 3/4 d8 e fis4. d8 e4 d \times 2/3{e8 d c} } \\ 
@@ -1127,7 +1128,7 @@ INSERT INTO "memento" VALUES(65,'4VH','Tcherneï goro',NULL,NULL,'Chr. Mandov','
 	\new Staff { \clef F \key g \major
 	<< { g4. g8 g g4. g g8 g g4. g8 a a4. fis8 g4 g d } \\ 
 	   {  g4. g8 g g4. c, e8 g g,4. g''8 e d4. d8 g,4 g2 } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(66,'4VH','Terre jurassienne',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 3/4 \partial 8*2 r4 r2. r4 r
 	<< { a8 cis e4 fis8 e cis a cis4. cis8 b a } \\ 
@@ -1135,7 +1136,7 @@ INSERT INTO "memento" VALUES(66,'4VH','Terre jurassienne',NULL,NULL,NULL,'\new C
 	\new Staff { \clef F \key a \major
 	<< { r4 r2. r4 r cis,8 e a4 a8 a e cis e4. e8 e e } \\ 
 	   { a,8 cis e4 fis8 e cis a cis2 r4 r2. r4. a8 b cis } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(67,'4VH','Terre soit douce',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 4/4 \partial 8*2
 	<< { g8 g a4 c8 a g4 r8 g a a c a g4  } \\ 
@@ -1143,7 +1144,7 @@ INSERT INTO "memento" VALUES(67,'4VH','Terre soit douce',NULL,NULL,NULL,'\new Ch
 	\new Staff { \clef F \key c \major r4 r1 r2 r4
 	<< { g8 g a4 g8 e c4 a } \\ 
 	   { g''8 g a4 g8 e c4 a  } >> }
->>',NULL,NULL,'répertoire',NULL);
+>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(68,'4VH','Tibié paiom',NULL,'Dmitry Bortniansky',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 4/4 \partial 4*1
 	<< { cis4 cis2. cis4 cis2 b4 e d2. e4 d d cis cis } \\ 
@@ -1158,7 +1159,7 @@ Gôspodi (bis)
 Imalimtisia Bôjénach''(ter) 
 Bôjénach''
 Malimtisia Bôjénach (bis)
-',NULL,'répertoire',NULL);
+',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(69,'4VH','Un pas sur tes chemins','Maurice Carême','Blaise Mettraux',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key es \major \time 4/4 \partial 4*1
 	<< { bes4 bes2 r8 bes c c bes2. bes4 es4. es8 es4 f } \\ 
@@ -1166,7 +1167,7 @@ INSERT INTO "memento" VALUES(69,'4VH','Un pas sur tes chemins','Maurice Carême'
 	\new Staff { \clef F \key es \major r4 r4
 	<< { es4 f8 f es d g2. g4 g4. g8 g4 g } \\ 
 	   { es4 es8 es bes bes es4 es d d c4. c8 f,4 f } >> }
->>',NULL,NULL,'actuel',NULL);
+>>',NULL,NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(70,'4VH','Vienne le temps d''aimer',NULL,'Didier Rimaud','P.K.','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 2/4 
 	<< { cis8 cis16 cis cis8 cis16 cis cis8 cis16 cis cis8 cis16 cis cis8 cis16 cis cis8 cis16 cis } \\ 
@@ -1174,7 +1175,7 @@ INSERT INTO "memento" VALUES(70,'4VH','Vienne le temps d''aimer',NULL,'Didier Ri
 	\new Staff { \clef F \key a \major
 	<< { cis8 cis16 cis b8 b16 b a8 a16 a gis8 gis16 gis fis8 fis16 fis fis8 fis16 fis } \\ 
 	   { cis''8 cis16 cis b8 b16 b a8 a16 a gis8 gis16 gis fis8 fis16 fis e8 e16 e } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(71,'4VH','Viens déguster!','Emile Gardaz',NULL,'Dominique Gesseney-Rappo','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \major \time 6/8 \partial 8*3
 	<< { r4. e2. e4. e4 e8 e4. r  } \\ 
@@ -1182,7 +1183,7 @@ INSERT INTO "memento" VALUES(71,'4VH','Viens déguster!','Emile Gardaz',NULL,'Do
 	\new Staff { \clef F \key a \major
 	<< { e,8 e a e4 e8 e e e a4 a8 b cis b e,4. r } \\ 
 	   { e8 e a e4 e8 e e e a,4 a8 e''8 e a e4 e8 e e e } >> }
->>',NULL,NULL,'restes',NULL);
+>>',NULL,NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(72,'4VH','Viens, je t''invite!','Anne-Marie Monnier','Anne-Marie Monnier & Patrick Bocherens',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 4/4 
 	<< { b4 a8 g c4 b8 a g4 fis8 e~e2 b''4 b8 b d4 c8 c } \\ 
@@ -1190,7 +1191,7 @@ INSERT INTO "memento" VALUES(72,'4VH','Viens, je t''invite!','Anne-Marie Monnier
 	\new Staff { \clef F \key g \major
 	<< { r4 b r c r8 c8 b a g b4. g4 g8 g fis4 fis8 fis } \\ 
 	   { e4 r a, a b b8 e~e4 e8 fis g4 g d2 } >> }
->>',NULL,NULL,'déchiffré',NULL);
+>>',NULL,NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(73,'4VH','Viens plus près...','Jalâloddîn Rûmî','François Pantillon',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key c \major \time 3/4 
 	<< { b8 b c2 b8 b e4 \times 2/3 { r8 e e } \times 2/3 {fis fis b,} d4 g, \time 2/4 \times 2/3 {a4 g a} } \\ 
@@ -1198,7 +1199,7 @@ INSERT INTO "memento" VALUES(73,'4VH','Viens plus près...','Jalâloddîn Rûmî
 	\new Staff { \clef F     \key c \major 
 	<< { b8 b b2 b8 a g4~ \times 2/3 {g8 g g} fis4 e2 \times 2/3 {e2 e4} } \\ 
 	   { b''8 b b2 b8 a g4 f8 e d4 c2 \times 2/3 {c2 c4} } >> }
->>',NULL,NULL,'déchiffré',NULL);
+>>',NULL,NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(74,'4VH','Viva tutte le vezzose','Léon Jordan','Felice Giardini','Léon Jordan','\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key g \major \time 2/4
   << { r4 s4 r4 } 
@@ -1209,7 +1210,7 @@ INSERT INTO "memento" VALUES(74,'4VH','Viva tutte le vezzose','Léon Jordan','Fe
 	   { g,8 g4. g8 g4. g8 g4. g8 g4. g8 g4. } >>  }
 >>','Viva tutte le vezzose, <i>(3x)</i>
 donne amabili, graziose
-che non hanno crudeltà.<i>(2x)</i>',NULL,'ancien',NULL);
+che non hanno crudeltà.<i>(2x)</i>',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(75,'4VH','Voici-voilà','Emile Gardaz','André Ducret',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef "G_8" \key a \minor \time 3/4 \partial 4*1
 	<< { e,4 c''4. b8 c d b2 e,4 d''4. c8 e d e2 a,4 d4. a8 a c } \\ 
@@ -1217,7 +1218,7 @@ INSERT INTO "memento" VALUES(75,'4VH','Voici-voilà','Emile Gardaz','André Ducr
 	\new Staff { \clef F \key a \minor
 	<< { e4 e4. e8 e e e2 e4 a gis gis8 gis a2 a4 fis4. fis8 e e } \\ 
 	   { e4 a,4. a8 a a e''2 e4 e4. e8 e e f2 a4 d,4. d8 c a } >> }
->>',NULL,NULL,'ancien',NULL);
+>>',NULL,NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(76,'4VM','A Bethléem Jésus est né',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \minor \time 3/4 \partial 4*1
 	<< { g''4 g2 g4 a2 a4 bes2 g4 f2 f4 bes2 c4 bes2 a4 } \\
@@ -1235,7 +1236,7 @@ Alléluia, Alléluia, Alléluia
 
 3. Chantons à Dieu tous d''un seul cœur, Alléluia
 Bénissons-le pour ce Sauveur,
-Alléluia, Alléluia, Alléluia','restes',NULL,NULL);
+Alléluia, Alléluia, Alléluia','restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(77,'4VM','A la table du fond',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 6/8 
 	r8. << {a''16 a8 a bes c bes2.~bes8. g16 g8 g a bes } \\
@@ -1243,14 +1244,14 @@ INSERT INTO "memento" VALUES(77,'4VM','A la table du fond',NULL,NULL,NULL,'\new 
 	\new Staff { \clef F \key f \major 
 	r8. << { a,16 a8 a bes c d2. d8. d16 d8 d d d } \\
 	       { a16 a8 a bes c  g2. g8. g16 g8 g g g } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(78,'4VM','Allez les marins',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 3/4 \partial 4*1 r4
 	<< { b''2. g d b'' a } \\ 
 	   { b,2. g'' d b d } >> }
 	\new Staff { \clef F \key g \major 
 	 d,4 d e d d2 d4 c b c d2 fis4 fis fis fis  }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(79,'4VM','Ami, dans cette vie',NULL,NULL,'Jean-Louis Raemy','\new ChoirStaff 
 << \new Staff { \clef G \key a \minor \time 2/2
 	<< { r1 r r r2. e4 a gis a b } \\
@@ -1272,7 +1273,7 @@ Je voudrais être partout où l''on boit du vin.
 
 En buvant de ce jus divin 
 Du bonheur nous sommes certains 
-En noyant le chagrin		bis','actuel',NULL,NULL);
+En noyant le chagrin		bis','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(80,'4VM','Anges, dans nos campagnes (les)',NULL,NULL,NULL,'\new ChoirStaff 
 \new Staff { \clef G \key g \major \time 4/4 
 	<< { b''4 b b b8 d d4. c8 b4 g8 r b4 b8. a16 b4 b8 d } \\ 
@@ -1299,7 +1300,7 @@ Refrain
 Unissez-vous à leurs concerts,
 Et que vos tendres musettes
 Fassent retenir les airs :
-Refrain','restes',NULL,1);
+Refrain','restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(81,'4VM','Aujourd''hui je chanterai',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key b \minor \time 3/4  
 	<< { b''8 fis fis4. b8 cis fis, fis2 d''8 d d d cis b ais4 fis4. } \\ 
@@ -1307,7 +1308,7 @@ INSERT INTO "memento" VALUES(81,'4VM','Aujourd''hui je chanterai',NULL,NULL,NULL
 	\new Staff { \clef F \key b \minor 
 	<< { d8 d d4. d8 cis cis cis2 b8 b b b b b cis4 cis4. } \\ 
 	   { b8 b b4. cis8 a a a2 g8 g g g g g fis4 ais4. } >> r8 }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(82,'4VM','Avril au Portugal',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key c \minor \time 2/4 \partial 8*1 
 	<< { r8 g''2~g2 g2~g2 g2 } \\ 
@@ -1334,7 +1335,7 @@ O… O… Si l''on est fou, Le ciel l''est plus que vous
 O… O… Au Portugal en Avril ?
 
 Coda: Avril ……………… au Portugal
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(83,'4VM','Ballade en novembre',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key bes \major \time 4/4
 	<< { r8 d''8 d d d d d d d1 r8 c c c c c c c } \\ 
@@ -1361,7 +1362,7 @@ Qu''on me laisse à mes amours mortes, Qu''on me laisse à mes souvenirs
 Mais avant de fermer la porte, Qu''on me laisse le temps 
 d''en rire
 Refrain
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(84,'4VM','Baluchon (le)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key as \major \time 3/4 \partial 4 
 	<< { es8 es as bes16 c bes4. bes8 \time 2/4 c des c bes c4 as8 g } \\ 
@@ -1369,7 +1370,7 @@ INSERT INTO "memento" VALUES(84,'4VM','Baluchon (le)',NULL,NULL,NULL,'\new Choir
 	\new Staff { \clef F \key as \major 
 	<< { es,8 es c'' des16 es es4. g,8 as as as des c4 c8 c } \\ 
 	   { es,8 es as as16 as g4. g8 f f f f e4 f8 es } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(85,'4VM','Belle qui tient ma vie',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 4/4 \partial 2*1
 	<< { g''2 g4 f g a bes2 bes4 d c bes bes a bes2 g2 } \\
@@ -1377,7 +1378,7 @@ INSERT INTO "memento" VALUES(85,'4VM','Belle qui tient ma vie',NULL,NULL,NULL,'\
 	\new Staff { \clef F \key f \major 
 	<< { bes2 bes4 a bes c d2 d4 bes g d'' c c d2 bes } \\
 	<< { g2 g4 d g f bes,2 bes4 bes c d es f bes2 g } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(86,'4VM','Cantate domino',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \minor \time 3/4
 	<< { g''4 g fis g4. g8 g4 bes2. bes4. a8 bes c d2. } \\ 
@@ -1385,7 +1386,7 @@ INSERT INTO "memento" VALUES(86,'4VM','Cantate domino',NULL,NULL,NULL,'\new Choi
 	\new Staff { \clef F \key g \minor 
 	<< { bes,4 bes a bes4. bes8 bes4 bes4. a8 bes c d2. d4. c8 d es } \\ 
 	   { g,4 g d g4. g8 g4 g4. f8 g a bes2. bes2. } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(87,'4VM','Can''t help fallin'' in love',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key es \major \time 4/4 
 	<< { es2 bes'' es,2. f8 g aes2 g f2. bes,4 } \\
@@ -1393,7 +1394,7 @@ INSERT INTO "memento" VALUES(87,'4VM','Can''t help fallin'' in love',NULL,NULL,N
 	\new Staff { \clef F \key es \major 
 	<< { g2 g g2. aes8 bes c2 bes bes2. r4 } \\
 	<< { es,2 d c bes aes es'' bes2. bes4	 } >> >> }
->>',NULL,'restes',NULL,NULL);
+>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(88,'4VM','C''était une bonne année, je crois',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 4/4 \partial 2*1
 	<< { c''4 bes a8 f bes a g4. f8 f2. r8 c f4 a g8 bes8~bes4 } \\
@@ -1401,7 +1402,7 @@ INSERT INTO "memento" VALUES(88,'4VM','C''était une bonne année, je crois',NUL
 	\new Staff { \clef F \key f \major 
 	<< { c,4 d c d c bes a2. r8 bes a4 a c8 c~c4 } \\
 	<< { f,2 f8 d bes4 c c f2. r8 g f4 f c8 c~c4 } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(89,'4VM','Chanson à boire','M. Carré & L. Battu','Jacques Offenbach','Jean-Pierre Bovet','\clef F \key g \major \time 2/4 
 	<< { g8 g g g | d'' b16 a a8 g g g g g d''8 c16 b a4 } \\ 
 	   { g8 fis e d b8 c16 c d8 g g fis e d b8 c16 c d4 } >>','1. Quand les moutons sont à l''étable,
@@ -1437,10 +1438,10 @@ Vive le vin rose, rouge ou bleu
 Quand j''ai soif, je suis moins qu''un homme, 
 Quand j''ai bu, je suis presqu'' un dieu.
 Refrain
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(90,'4VM','Chanson des regrets',NULL,NULL,NULL,'\new Staff { \clef F \key f \minor \time 2/4 \partial 4*1
     f,8 g aes4 g8 f c''4 c r r8 
-	<< { c8 es des c des } \\ { c8 g f e f } >> }',NULL,'ancien',NULL,NULL);
+	<< { c8 es des c des } \\ { c8 g f e f } >> }',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(91,'4VM','Chant des saisons (le)','Rémy Gagne','Rémy Gagne','François Provencher','\new Staff { \clef F \key c \major \time 4/4
 	c,8. c16 c8 c c d c d e8. e16 e8 e e f e f  }','1. [B] Quand tout souriant le nouveau-né donne à sa mère son premier baiser
 [TB] Quand l''oiseau de la dernière couvée quitte son nid pour apprendre à voler
@@ -1459,7 +1460,7 @@ Merci mon Dieu quand l''automne, tu nous combles de tes dons
 4. [B] Quand l''écho des bois a oublié les gais refrains des enfants dispersés
 [TB] Quand les feuilles mort'' ont tapissé les vieux sentiers des amants séparés
 [SATB] Les nids d''oiseaux se balancent dans les arbres décharnés, ô…
-[A] Et le ruisseau sans romance sous la neige va pleurer','répertoire',NULL,NULL);
+[A] Et le ruisseau sans romance sous la neige va pleurer','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(92,'4VM','Chante en mon cœur pays aimé','Pierre Kaelin','Pierre Kaelin',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key f \major \time 4/4 \partial 4 
 	<< { f8 g a4 a8 a a4 bes8 c c g g g g g a g } \\ 
@@ -1502,7 +1503,7 @@ Souvenirs de mon enfance,
 Reste jeune (à jamais), 
 A tout jamais.
 Refrain
-','répertoire',NULL,NULL);
+','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(93,'4VM','Chante-nous Roméo',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 3/4 \partial 8*1 
 	<< { d8 d e e g g b b4 a4. a8 a b b c c d } \\ 
@@ -1510,7 +1511,7 @@ INSERT INTO "memento" VALUES(93,'4VM','Chante-nous Roméo',NULL,NULL,NULL,'\new 
 	\new Staff { \clef F \key g \major 
 	<< { b,8 b b b b b g a4 a4. a8 d d d d d d  } \\ 
 	   { b8 g g g g e d c4 c4. c8 d d d d d d  } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(94,'3VM','Chemin de papa (le)','Pierre Delanoë','Joe Dassin','Norbert Ott','\new ChoirStaff 
 <<  \new Staff { \clef G \key d \major \time 4/4 
 	<< { r1 d8 fis b b ais2 r1 } \\
@@ -1543,7 +1544,7 @@ Nous a semés aux quatre coins du monde
 Comme des grains de blé
 Et quelque part au bout de l''univers
 Roule encore la vieille roulotte de mon père
-Refrain','actuel',NULL,NULL);
+Refrain','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(95,'4VM','Comédien (le)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key c \minor \time 4/4 
 	<< { r4 \times 2/3{g''8 as bes} as g~\times 2/3{g d es} g1 
@@ -1553,7 +1554,7 @@ INSERT INTO "memento" VALUES(95,'4VM','Comédien (le)',NULL,NULL,NULL,'\new Choi
 	<< { r1 s1 s2 r2 } <<
 	   { s1 g2 g g s  } \\ 
 	   { s1 c,2 d es s  } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(96,'4VM','Comme la rivière',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \minor \time 9/8 \partial 8*6
 	<< { r8 g''8 a bes a g a4. r8 g a bes bes d a4. r8 g a bes a g } \\
@@ -1562,7 +1563,7 @@ INSERT INTO "memento" VALUES(96,'4VM','Comme la rivière',NULL,NULL,NULL,'\new C
 	<< { r4. s4. s r s s r s } 
 	<< { s4. bes4. a s bes a s g } \\
 	   { s4. g4. f s g f s es } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(97,'4VM','Coquin (le)','Jacques Bron','Jean Rochat',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key f \minor \time 3/4
 	<< { f8 e f g as g \time 4/4 f2 c \time 3/4 f8 e f g as bes \time 4/4 c2 as } \\
@@ -1594,7 +1595,7 @@ N''être bientôt plus qu''épaves,
 Par la faute de cet hôte trop bien accueilli !
 Il vous lie, il vous entrave,
 Il ne veut que des esclaves,
-Et ses chaînes sont des peines, le jour et la nuit !','actuel',NULL,NULL);
+Et ses chaînes sont des peines, le jour et la nuit !','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(98,'4VM','Dans la vie faut pas s''en faire',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \major \time 2/2 \partial 4*3
 			e8 fis e4 d g2 r8 g fis g \time 2/4 
@@ -1602,7 +1603,7 @@ INSERT INTO "memento" VALUES(98,'4VM','Dans la vie faut pas s''en faire',NULL,NU
 	   {  a8 g d e eis fis~fis16 fis eis fis d8 d d d } >>	}
 	\new Staff { \clef F \key g \major 
 	r2. r1 r2 r fis,4 fis }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(99,'4VM','Das alte Guggisberger Lied',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key a \minor \time 2/4 \partial 8*1 
 	<< { e8 a a16 gis a8 b c a b r c c16 a b8 e, } \\ 
@@ -1610,7 +1611,7 @@ INSERT INTO "memento" VALUES(99,'4VM','Das alte Guggisberger Lied',NULL,NULL,NUL
 	\new Staff { \clef F \key a \minor 
 	<< { e,8 c'' b16 b a8 a a4 gis8 r a c16 c b8 e,8 } \\
 	   { e8 a,8 b16 b c8 d e f e r a, a16 c e8 e } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(100,'4VM','Deutsche Messe| 1. Zum Eingang','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 4/4 \partial 4*1 
 	<< { a''4 a4. a8 a4 c a2 g4 g a4. g8 f4 bes8 a g2 a4 a } \\ 
@@ -1631,7 +1632,7 @@ und Erd und Himmel weihet zu süßem Heimatland.
 3. Doch darf ich dir mich nahen, mit mancher Schuld beladen?
 Wer auf der Erde Pfaden ist deinem Auge rein?
 Mit kindlichem Vertrauen eil ich in Vaters Arme,
-fleh reuerfüllt: Erbarme, erbarm, o Herr, dich mein!','déchiffré',NULL,NULL);
+fleh reuerfüllt: Erbarme, erbarm, o Herr, dich mein!','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(101,'4VM','Deutsche Messe| 2. Zum Gloria','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 << \new Staff { \clef G \key bes \major \time 4/4 
 	<< { bes''4 f d'' bes8 bes es4 d8 c d4 c d c8 c bes4 c8 c a4 g8 g f2 } \\ 
@@ -1651,7 +1652,7 @@ Ehre, Ehre sei Gott in der Höhe! Säuseln die Lüfte, brauset das Meer.
 Feiernder Wesen unendlicher Chor jubelt im ewigen Danklied empor:
 Ehre sei Gott in der Höhe!
 Feiernder Wesen unendlicher Chor jubelt im ewigen Danklied empor:
-Ehre sei Gott in der Höhe!','déchiffré',NULL,NULL);
+Ehre sei Gott in der Höhe!','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(102,'4VM','Deutsche Messe| 3. Zum Evangelium und Credo','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 6/8 \partial 8*1
 	<< { g''8 g4 g8 g e a a g fis g4 b8 b4 a8 g4 fis8 e4 r4. d8 } \\
@@ -1667,7 +1668,7 @@ Und überall, allüberall, tönt Preis und Dank empor.
 2. Der Mensch auch lag in Geistesnacht, erstarrt von dunklem Wahn;
 Der Heiland kam, und es ward Licht! Und heller Tag brach an.
 Und seiner Lehre heilger Strahl weckt Leben nah und fern;
-und alle Herzen pochen Dank und preisen Gott den Herrn, und preisen Gott den Herrn.','entendu',NULL,NULL);
+und alle Herzen pochen Dank und preisen Gott den Herrn, und preisen Gott den Herrn.','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(103,'4VM','Deutsche Messe| 4. Zum Offertorium','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 <<  \new Staff { \clef G \key c \major \time 3/4 \partial 8*1
 	<< { g''8 g8. f16 e8 g c c c4 b8 d d d d4. c8 b a g2 r8 g } \\
@@ -1685,7 +1686,7 @@ soll meines Lebens Wonne sein.
 
 3. Mich selbst, o Herr, mein Tun und Denken und Leid und Freude opfr'' ich dir;
 Herr, nimm durch deines Sohnes Opfer dies Herzensopfer auch von mir,
-dies Herzensopfer auch von mir.','entendu',NULL,NULL);
+dies Herzensopfer auch von mir.','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(104,'4VM','Deutsche Messe| 5. Zum Sanctus','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 <<  \new Staff { \clef G \key es \major \time 3/4 
 	<< { g''2 g4 f2 g4 as2. g f2 f4 f2 g4 es2.( f2) r4 } \\
@@ -1701,7 +1702,7 @@ ewig ist und waltet, sein wird immerdar.
 2. Heilig, heilig, heilig, heilig ist der Herr!
 Heilig, heilig, heilig, heilig ist nur er.
 Allmacht, Wunder, Liebe, alles rings umher!
-Heilig, heilig, heilig, heilig ist der Herr!','entendu',NULL,NULL);
+Heilig, heilig, heilig, heilig ist der Herr!','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(105,'4VM','Deutsche Messe| 6. Nach der Wandlung','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 4/4 \partial 8*1
 	<< { b''8 b4. d8 c b a g c4 b r8 b b g e8. fis16 g8 a fis4. a8 } \\
@@ -1720,7 +1721,7 @@ wenn opfernd ihr ein Gleiches tut.
 und du, mein Heiland, bist zugegen, des Geistes Aug wird dich gewahr.
 Herr, der du Schmerz und Tod getragen, um uns das Leben zu verleihn,
 lass dieses Himmelsbrot uns Labung im Leben und im Tode sein,
-im Leben und im Tode sein!','entendu',NULL,NULL);
+im Leben und im Tode sein!','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(106,'4VM','Deutsche Messe| 7. Zum Agnus Dei','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 <<  \new Staff { \clef G \key bes \major \time 6/8 \partial 8*1
 	<< { bes''8 bes4 f8 g4 a8 c4. bes4 bes8 bes c d d c bes a4.~a8 r bes } \\
@@ -1741,7 +1742,7 @@ entzückender und reiner dem seligen Gemüt.
 3. Herr, unsre Lieben alle, die nun bereits von hier
 ins Land des Friedens gingen, nimm sie, nimm sie zu dir!
 Lass einst sie dort uns finden! O seliger Verein,
-wenn wir des Himmelsfrieden zusammen uns erfreu''n!','entendu',NULL,NULL);
+wenn wir des Himmelsfrieden zusammen uns erfreu''n!','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(107,'4VM','Deutsche Messe| 8. Schlussgesang','Philippe Neumann','Franz Schubert','André Charlet','\new ChoirStaff 
 <<  \new Staff { \clef G \key f \major \time 3/4
 	<< { a''8. a16 a8 a a8. g16 g4 f r d8. f16 c f a c c8. bes16 } \\
@@ -1754,7 +1755,7 @@ in die Welt hinaus, ins Leben folgt mir nun des Himmels Lust.
 Dort auch bist ja du mir nahe, überall und jederzeit,
 allerorten ist dein Tempel, wo das Herz sich fromm dir weiht.
 Segne, Herr, mich und die Meinen, segne unsern Lebensgang!
-Alles, unser Tun und Wirken, sei ein frommer Lobgesang,','entendu',NULL,NULL);
+Alles, unser Tun und Wirken, sei ein frommer Lobgesang,','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(108,'3VM','Die launige Forelle',NULL,'Franz Schubert','Franz Schöggl','\new ChoirStaff 
 <<  \new Staff { \clef G \key bes \major \time 2/4 \partial 8*1
 	<< { f8 bes bes d d bes4 f8 f f8. f16 c'' bes a g f4 r8 f bes bes d d } \\
@@ -1783,7 +1784,7 @@ Ich stand an dem Gestade in süsser Ruh,
 In süsser Ruh und sah 
 Des muntern Fischleins Bade im klaren Bächlein zu
 Im klaren, klaren Bächlein zu
-','actuel',NULL,NULL);
+','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(109,'4VM','El Senyor',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 3/4 \partial 4*1 
 	<< { f8 g a4 a8 a g f d4 c f8 g a4. a8 f4 g2 c,8 c } \\ 
@@ -1791,7 +1792,7 @@ INSERT INTO "memento" VALUES(109,'4VM','El Senyor',NULL,NULL,NULL,'\new ChoirSta
 	\new Staff { \clef F \key f \major 
 	<< { a8 c c4 c8 c f, f f4 e a8 c c4. d8 c4 g2 c,8 c } \\
 	   { d8 c f4 f8 f a, a bes4 c d8 c <f f,>4. <f f,>8 a,4 c2 c8 c } >> }
->>',NULL,'répertoire',NULL,NULL);
+>>',NULL,'répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(110,'4VM','Etoile de Noël (l'')','Camille Martin','Charly Martin',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \minor \time 6/8 \partial 8*3
 	<< { g''8 g d'' d4 g,8 a bes a g4 g8 g g g f4 f8 d4 f8 g4. d''8 d d } \\
@@ -1815,7 +1816,7 @@ Noël ! Noël ! Jésus descend du ciel !
 Jésus, l''étoile de bonté
 Car Lui seul peut mettre en mon âme 
 Tant d''Idéal et de clarté.
-Noël ! Noël ! Jésus descend du ciel !','ancien',NULL,NULL);
+Noël ! Noël ! Jésus descend du ciel !','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(111,'4VM','Et si tu n''existais pas','Vito Pallavicini; français: Claude Lemesle & Pierre Delanoë','Salvatore Cutugno & Pascale Losito','Norbert Ott','\new ChoirStaff 
 <<  \new Staff { \clef G \key g \minor \time 4/4
 	<< { d8 g a bes a4 g8d~d4 r8 d g a bes d f4 es8 a,~a2 } \\
@@ -1845,7 +1846,7 @@ Mais je ne serais pas vrai pas vrai
 Si tu n''existais pas  - l''aurais trouvé trouvé
 Le secret de la vie le pourquoi
 Simplement pour te créer créer
-Te regarder te regarder','actuel',NULL,NULL);
+Te regarder te regarder','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(112,'4VM','Faire un tour à vélo',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key d \major \time 12/8 
 	 << { a''2. r4. a d a4 b8( b4.) d cis4 d8 e4 d8( d4.) } \\ 
@@ -1853,7 +1854,7 @@ INSERT INTO "memento" VALUES(112,'4VM','Faire un tour à vélo',NULL,NULL,NULL,'
 	\new Staff { \clef F \key d \major 
 	 << { e2. r4. r4 a,8 fis4 fis8 r4 a8 d4 b8 r4 b8 a4 a8 r4 a8 a4 a8 r4 a8} \\
 	   {  d2. r4. r4. d,4 r8 fis4 r8 e4 r8 b4 r8 a4 r8 cis4 r8 d4 r8 d4 r8  } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(113,'4VM','Fleur aux dents (la)','Claude Lemesle','Joe Dassin','Germinal Salvador','\new ChoirStaff 
 <<  \new Staff { \clef G \key c \major \time 2/2 \partial 4*2 r2
 	<< { g''1 a2 b c e c1 } \\
@@ -1886,9 +1887,9 @@ J''avais tell''ment à fair''
 A me tromper de chemin tant de fois 
 J''ai quand même fini par trouver celui qui mèn'' à toi
 Il y a femm'' qu''on attendait			
-Refrain','actuel',NULL,NULL);
+Refrain','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(114,'4VM','Fleurs en papier',NULL,NULL,NULL,'\new Staff { \clef G \key f \major \time 4/4
-    a''8 a a a~a2 g8 g a g4 f4. a8 a a a~a2 f8 g4. a8 g4. }',NULL,'ancien',NULL,NULL);
+    a''8 a a a~a2 g8 g a g4 f4. a8 a a a~a2 f8 g4. a8 g4. }',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(115,'4VM','Girometta',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \major \time 4/4 \partial 4*1 
 	<< { g''8 b d4 e8 d c4 d b8 g b d c4 a g2 r4. d8 } \\ 
@@ -1896,7 +1897,7 @@ INSERT INTO "memento" VALUES(115,'4VM','Girometta',NULL,NULL,NULL,'\new ChoirSta
 	\new Staff { \clef F \key g \major 
 	<< { b8 d b4 b8 e e4 d d8 d d d e4 d b2 r4. a8 } \\
 	   { g8 g g4 e8 e a4 d, g8 fis e e a,4 d g2 r4. fis8 } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(116,'4VM','Gens de la marge',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \minor \time 6/8 
 	 \partial 8 << { d8 bes''4 bes8 a4 a8 g a f d4 d8 es d c d4 d8 } \\ 
@@ -1904,9 +1905,9 @@ INSERT INTO "memento" VALUES(116,'4VM','Gens de la marge',NULL,NULL,NULL,'\new C
 	\new Staff { \clef F \key g \minor 
 	 \partial 8 << { d,8 g4 g8 a4 a8 bes c a bes4 d,8 es d c d4 d 8} \\
 	   {  d,8 g4 g8 f4 f8 es f f g4	 d8 es d c d4 d8  } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(117,'4VM','Hymne à l''amour',NULL,NULL,NULL,'\new Staff { \clef G \key g \major \time 4/4 \partial 4*1
-    d8 c b4. b8 b dis fis a g2. e8 d c4. c8 c e g b c4. }',NULL,'ancien',NULL,NULL);
+    d8 c b4. b8 b dis fis a g2. e8 d c4. c8 c e g b c4. }',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(118,'4VM','I heard the voice',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key c \major \time 4/4 
 	<< r4 s2. s1 r4 s2. s1
@@ -1916,7 +1917,7 @@ INSERT INTO "memento" VALUES(118,'4VM','I heard the voice',NULL,NULL,NULL,'\new 
 	<< r4 s2. s1 r4 s2. s1
 	<< { s4 a4 a8 a4 gis8~gis1 s4 g4 g8 g4 fis8~fis1 } \\ 
 	   { s4 a,4 a8 a4 a8~a1 s4 a4 a8 a4 a8~a1 } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(119,'4VM','Important c''est la rose (l'')',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key c \major \time 4/4 \partial 4*2 
 	<< { g''4 f e d e f g2. a8 g f4 g a b c c,2 a''8 g } \\ 
@@ -1924,7 +1925,7 @@ INSERT INTO "memento" VALUES(119,'4VM','Important c''est la rose (l'')',NULL,NUL
 	\new Staff { \clef F \key c \major 
 	<< { g,4 f e d e f g2. a8 g f4 g a b c c2 c8 c } \\ 
 	   { g4 f e d e f g2. a8 g f4 g a b c c2 c8 bes } >> }
->>',NULL,'restes',NULL,NULL);
+>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(120,'4VM','J''ai voulu vivre',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \major \time 4/4 
 	<< { r8 s2.. s2. r4 r8 s2.. s2. r4 }
@@ -1934,7 +1935,7 @@ INSERT INTO "memento" VALUES(120,'4VM','J''ai voulu vivre',NULL,NULL,NULL,'\new 
 	<< { r8 s2.. s2. r4 r8 s2.. s2. r4 }
 	<< { s8 \repeat unfold 5 a,8 b b cis2. s4 s8 \repeat unfold 5 a8 b d cis2. s4 } \\ 
 	   { s8 \repeat unfold 5 d,8 a'' a a2. s4 s8 \repeat unfold 5 d,8 a''8 b a2. s4 } >> >> }
->>',NULL,'restes',NULL,NULL);
+>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(121,'4VM','Je suis de ce pays',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key a \major \time 12/8 \partial 8 
 	<< { e8 a4.~a4 a8 gis4.~gis4 cis,8 fis2.~fis4.~fis4 fis8 } \\ 
@@ -1942,7 +1943,7 @@ INSERT INTO "memento" VALUES(121,'4VM','Je suis de ce pays',NULL,NULL,NULL,'\new
 	\new Staff { \clef F \key a \major 
 	<< { e,8 cis''4.~cis4 cis8 cis4.~cis4 b8 a2.~a4.~a4 a8 } \\ 
 	   { e8 a4.~a4 a8 cis4.~cis4 gis8 fis2.~fis4.~fis4 fis8 } >> }
->>',NULL,'répertoire',NULL,NULL);
+>>',NULL,'répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(122,'4VM','Joy to the world','Isaac Watts','Georg Friedrich Händel','Siegfried Singer','\new ChoirStaff 
 <<  \new Staff { \clef G \key d \major \time 4/4 
 	<< { d''4 cis8. b16 a4. g8 fis4 e d4. a''8 b4. b8 cis4. cis8 d2. r8 d } \\
@@ -1962,7 +1963,7 @@ White fields and floods, rocks, hills and plains repeat the sounding joy,
 repeat the sounding joy,
 the sounding, the sounding joy,
 
-3.  Comme 1.','répertoire',NULL,NULL);
+3.  Comme 1.','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(123,'3VM','Luci care, luci belle','Métastase','Wolfgang Amadeus Mozart',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key f \major \time 4/4 \partial 4*1
 	<< { c''8. bes16 bes8 a a4 f''8 e d c c b bes4 r bes8. a16  } \\
@@ -1976,7 +1977,7 @@ Date calma a questo core.
 Se per voi sospiro e moro,
 Idol mio, mio bel tesoro,
 Forza e solo del Dio d''amore
-Forza e sol del dio d''amore.','actuel',NULL,NULL);
+Forza e sol del dio d''amore.','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(124,'4VM','Madrigal',NULL,'Roland de Lassus',NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 4/4 
 	<< { f2 a4. bes8 c4 a f8 g g a a2 d c bes } \\ 
@@ -1997,7 +1998,7 @@ Ceux qui m''ont banni de vos yeux.
 3. Mon cœur se recommande à vous, 
 Tout plein d''ennui et de martyre, 
 Au moins en dépit des jaloux 
-Faites qu''adieu vous puisse dire.','entendu',NULL,NULL);
+Faites qu''adieu vous puisse dire.','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(125,'4VM','Maison de pierre (la)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key des \major \time 4/4 r4
 	<< { f8. f16 f8 f16 f f8. f16 f4. es8~es2 } \\ 
@@ -2005,7 +2006,7 @@ INSERT INTO "memento" VALUES(125,'4VM','Maison de pierre (la)',NULL,NULL,NULL,'\
 	\new Staff { \clef F \key des \major r4
 	<< { as8. as16 as8 as16 as as8. as16 bes4. bes8~bes2 } \\ 
 	   { des,8. des16 des8 des16 des des8. des16 ges4. ges8~ges2 } >> }
->>',NULL,'restes',NULL,NULL);
+>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(126,'4VM','Malaïka',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \major \time 4/4 
 	 \partial 4*1 << { d4 b''4. b8~b2 } \\ { d,4 g4. g8~g2} >> 
@@ -2014,7 +2015,7 @@ INSERT INTO "memento" VALUES(126,'4VM','Malaïka',NULL,NULL,NULL,'\new ChoirStaf
 	\new Staff { \clef F \key g \major 
 	<< { d,4 d''4. d8~d2 r4 c8 d \times 2/3 { e4 d c } b4. b b4 c4. c } \\
 		{ d,4 g4. b a4 d,4. c d4 g,4. g8~g2~g2. } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(127,'4VM','Manhà do carnaval',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key a \minor \time 4/4 \partial 4 
 	<< { e4 c''2~ \times 2/3{c4 b a} a2~ \times 2/3{a4 gis b} e,1~e2 r4 e} \\ 
@@ -2022,7 +2023,7 @@ INSERT INTO "memento" VALUES(127,'4VM','Manhà do carnaval',NULL,NULL,NULL,'\new
 	\new Staff { \clef F \key a \minor 
 	<< { e,4 e''2~\times 2/3{e4 d c} b2~\times 2/3{b4 b gis} a1~a2 gis } \\ 
 	   { e4 a,2~\times 2/3{a4 b c} d2 \times 2/3{e2 e4} a2 e b e } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(128,'4VM','Mélodie, je t''aime',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 3/4 
 	<< { d8 g g4. fis8 a4 g2 g8 d'' d2 bes8 d d2  } \\ 
@@ -2031,7 +2032,7 @@ INSERT INTO "memento" VALUES(128,'4VM','Mélodie, je t''aime',NULL,NULL,NULL,'\n
 	<< { g,8 g a4. a8 b4 b2 b8 b bes2 bes8 a a4 a } \\ 
 	   { <g g,>8 <g g,> <g g,>4. <g g,>8 <g g,>4 <g g,>2
 	   <g g,>8 <g g,> bes,2 bes8 c d4 d } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(129,'4VM','Messe de la Sainte-Croix |Agnus Dei',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key c \major \time 3/4 \partial 4*1
 	 << { e4 a b c c b a gis8 gis a a b b b2 a4 } \\ 
@@ -2039,14 +2040,14 @@ INSERT INTO "memento" VALUES(129,'4VM','Messe de la Sainte-Croix |Agnus Dei',NUL
 	\new Staff { \clef F \key c \major 
 	<< { s4 s s e, a b c b8 b a a gis gis a2 a4} \\ 
 	   { s4 s2. s s s } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(130,'4VM','Messe de la Sainte-Croix |Gloria',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \major \time 4/4 \partial 8*2
 	 d8 d g4 fis8 e d4 g a \fermata r r 
 	 << { d, g fis8 e d4. d8 } \\ { d4 d c8 c b4. d8 } >> }
 	\new Staff { \clef F \key g \major 
 	r4 r1 r2 r4 << { d,4 b'' a8 a g4 b } \\ { d,4 g, a8 a b4 g } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(131,'4VM','Messe de la Sainte-Croix| Kyrie',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \minor \time 4/4 \partial 8*1
 	<< { d8 g4. g8 g4 f8 es d4. d8 g4. g8 g4 a8 g fis4 g} \\
@@ -2054,7 +2055,7 @@ INSERT INTO "memento" VALUES(131,'4VM','Messe de la Sainte-Croix| Kyrie',NULL,NU
 	\new Staff { \clef F \key g \minor 
 	<< { d,8 bes''4 c d c8 c bes4 a g g g g8 a a4 a} \\
 	   { d,8  g,4 a bes a8 a g4 a bes b c cis8 cis d4 e} >>	}
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(132,'4VM','Messe de la Sainte-Croix |Sanctus',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key c \major \time 3/4
 	 << { e2. g c2 b8 b b2. c4. c8 b a } \\ 
@@ -2062,7 +2063,7 @@ INSERT INTO "memento" VALUES(132,'4VM','Messe de la Sainte-Croix |Sanctus',NULL,
 	\new Staff { \clef F \key c \major 
 	<< { r4 c2 r4 d2 r4 e d8 c b4 b2 a4 b c } \\ 
 	   { c2. b a2 a8 a e2. a4. a8 g a } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(133,'4VM','Mi-été de Taveyanne (la)',NULL,NULL,NULL,'\new Staff { \clef G \key g \major \time 12/8
 	  b''8 g a b4 d8 a2. b8 g a b4 d8 a4. a8 r8 r }','1. [SA] Voici la Mi-Eté, Bergers de nos montagnes, 
 Compagnons et compagnes, Que ce jour soit fêté
@@ -2090,14 +2091,14 @@ Comme ceux de Lausanne, Dansent sur Montbenon
 Ainsi ceux de Gryon, Ainsi ceux de Gryon
 7. Voici la Mi-Eté, Bergers de nos montagnes, 
 Compagnons et compagnes, Que ce jour soit fêté
-Voici la Mi-Eté, Voici (voici) la Mi-Eté','restes',NULL,NULL);
+Voici la Mi-Eté, Voici (voici) la Mi-Eté','restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(134,'4VM','Mississipi River',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key d \minor \time 2/2 
 	 r1 \bar "|:" << { f4 f2 g4 f4 f2 g4 } \\ { d4. e8 d2 d4. e8 d2 } >> }
 	\new Staff { \clef F \key d \minor 
 	<< { r1 a4 bes8 a bes4 a bes a8 bes~bes8 a } \\
 	   { a4\fermata g f e d2 a d a } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(135,'4VM','Mon village',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key bes \major \time 3/4 \partial 4*1 
 	<< { d''8. es16 d4 bes c8. bes16 a2 g8. f16 es''4 es f8. es16 } \\ 
@@ -2105,7 +2106,7 @@ INSERT INTO "memento" VALUES(135,'4VM','Mon village',NULL,NULL,NULL,'\new ChoirS
 	\new Staff { \clef F \key bes \major 
 	<< { bes,8. bes16 bes4 bes d c8. c16 c4 g8. f16 c''4 bes a } \\ 
 	   { bes,8. bes16 bes4 d2 f8. f16 f4 g8. f16 f2 f,4 } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(136,'4VM','Noël, c''est un enfant',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 4/4 \partial 4
 	<< { d4 b''2~b8 a a b g2. g4 c2~c8 b a g } \\ 
@@ -2143,7 +2144,7 @@ Refrain
 4. Comme nos saisons, une abeille
 Aux murs de l''horizon, le soleil -ou
 Noël enfant (qui) vient et sourit  -bf 
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(137,'4VM','Noël des enfants du monde','Jacques Lafont','Jean Naty-Boyer','Rudolf Schmidt-Wunstorf','\new ChoirStaff 
 <<  \new Staff { \clef G \key g \minor \time 2/4 \partial 8*1
 	<< { d8 g g a bes bes es,4 es8 a a bes c f,4. d8 g g a bes } \\
@@ -2165,7 +2166,7 @@ Refrain
 Colombe pour la terre, colombe pour la terre,
 Un oiseau de Noël.
 
-Refrain','ancien',NULL,NULL);
+Refrain','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(138,'4VM','Notre-Dame de ma terre',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key c \minor \time 4/4 \partial 4 
 	<< { g''8 g g4. f8 es d es4 es c8 es d es f as \time 2/4 g4 g8 g } \\ 
@@ -2173,7 +2174,7 @@ INSERT INTO "memento" VALUES(138,'4VM','Notre-Dame de ma terre',NULL,NULL,NULL,'
 	\new Staff { \clef F \key c \minor 
 	<< { g,8 g g4. as8 g f as4 g as8 f f g c bes c4 g8 f } \\ 
 	   { g8 g g4. f8 c d f d c4 c8 c bes bes as f c''4 g''8 f } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(139,'4VM','Nous sommes trois souverains princes',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \minor \time 9/8 
 	<< { g''8 g g d''4. c8 bes d \time 6/8 c( bes) a g a bes } \\ 
@@ -2181,7 +2182,7 @@ INSERT INTO "memento" VALUES(139,'4VM','Nous sommes trois souverains princes',NU
 	\new Staff { \clef F \key g \minor 
 	r4. r4. << { g,8 g g g4( bes8) bes a g } \\
 	   {   g8 g g c,4( d8) es f g } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(140,'4VM','Nuit des roses (la)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \minor \time 4/4 
 	<< { d8 d16 c d8 f g4. d8 g8 g16 f g8 a f2 } \\
@@ -2189,7 +2190,7 @@ INSERT INTO "memento" VALUES(140,'4VM','Nuit des roses (la)',NULL,NULL,NULL,'\ne
 	\new Staff { \clef F \key d \minor 
 	<< { a4 a bes bes bes bes a a } \\
 	   { d,4 d g, g g g d'' d } >> }
->>',NULL,'répertoire',NULL,NULL);
+>>',NULL,'répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(141,'4VM','Ô nuit brillante',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key b \minor \time 6/8 
      << { s2. s2 s8 r8 s2. s2 s8 r8 } 
@@ -2217,7 +2218,7 @@ Refrain
 3. Louanges, louanges, 
 Gloire au plus haut des cieux!
 Chantons avec les anges: 
-Paix sur terre en tous lieux!','ancien',NULL,NULL);
+Paix sur terre en tous lieux!','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(142,'4VM','Partager','Emile Gardaz','Pierre Kaelin',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \minor \time 4/4 \partial 4*1
     << { s4 s1 s2. r8 s8 s1 } 
@@ -2252,7 +2253,7 @@ Coda:
 Partager cet amour qu''on redoute de vivre, 
 S''en aller tout autour où est la joie de suivre 
 Un amour partagé.
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(143,'4VM','Pendant la messe',NULL,NULL,'Bernard Lallement','\new ChoirStaff 
 << \new Staff { \clef G \key g \major \time 6/8 \partial 8*3
 	<< { g''8 a fis g4. a8 b c b a4 g8 a fis g4. a8 b c } \\
@@ -2279,7 +2280,7 @@ N''hésitons pas, vidons les plats !
 4. Et maintenant, donnez à boire,
 Car de chanter met en sueur !
 Allons, remplissez bien les verres,
-Ça réjouira tous les chanteurs !','actuel',NULL,NULL);
+Ça réjouira tous les chanteurs !','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(144,'4VM','Petite diligence (la)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key f \major \time 2/2
     << { s1 s2. r4 s1 s2. } 
@@ -2289,14 +2290,14 @@ INSERT INTO "memento" VALUES(144,'4VM','Petite diligence (la)',NULL,NULL,NULL,'\
     << { s1 s2. r4 s1 s2. } 
 	<< { a8 a a a f4 a bes bes bes s bes8 bes a gis g4 g bes a2 } \\ 
 	   { f8 f e e d4 c bes a g s c8 c c c g''4 c, c f2 } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(145,'4VM','Petit jardin plein d''ombre','René Morax','Gustave Doret',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key g \major \time 4/4 \partial 8*3
 	    d8 g a b4 e d8 b a b b2~b8 d,8 e g e4. d8 e g e d }
 	\new Staff { \clef F \key g \major 
 	<< { d,8 g a b4 e d8 b a b b2~b8 d,8 e g  e4. d8 e g e d } \\ 
 	   { d8 g a b4 e, d8 b'' a b b2~b8 d,8 e g  e4. d8 e g e d } >> }
->>',NULL,'restes',NULL,NULL);
+>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(146,'4VM','Phea','Marie-José Guisolan','Marie-José Guisolan','André Ducret','\new ChoirStaff 
 <<  \new Staff { \clef G \key d \minor \time 6/8 \partial 8*3 
     r4. d4. cis d r f e }
@@ -2330,14 +2331,14 @@ Grandira bien demain
 4. [B] Herbe fleur Herbe fraîche
 Ronde foll Toubillonn'' demain
 Refrain
-','répertoire',NULL,NULL);
+','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(147,'4VM','Quinze marins',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key a \minor \time 3/4 
 	{ s2. a''2 a4 a2 a4 g2. g2 g4 a2 a4 } }
 	\new Staff { \clef F \key a \minor 
 	<< { e2 e4 e2 e8 e e4 d c d2. b2 b4 c2 a4 } \\ 
 	   { s2. s2. c,2 e4 b2. e2 e4 f2 e4 } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(148,'4VM','Rencontres',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \minor \time 4/4 \partial 16*5 
 	<< { a''16 d8. e16 f8. f16 f4.. e16 d8. e16 a,8. a16 a4 r8. a16 d8. e16 } \\ 
@@ -2345,13 +2346,13 @@ INSERT INTO "memento" VALUES(148,'4VM','Rencontres',NULL,NULL,NULL,'\new ChoirSt
 	\new Staff { \clef F \key d \minor 
 	<< { a,16 a8. a16 a4.. a16 a2 c4.. c16 a8. a16 a8. a16 } \\ 
 	   { a16 d,8. d16 d4.. d16 d2 a4.. a16 d8. d16 d8. d16 } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(149,'4VM','Rose des vents (la)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key e \minor \time 6/8 \partial 8*3 
 	r4. r2. r4. e8 g a a4 e8 g e g }
 	\new Staff { \clef F \key e \minor 
 	e,8 g a b c b a g a b2. c4. b4 a16 g }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(150,'4VM','Route de l''aube (la)','Jacques Bron','V. Solovyov','Jean Rochat','\new ChoirStaff 
 <<  \new Staff { \clef G \key c \minor \time 4/4 \partial 4*1
 	<< { es4 d2. es8 d \time 2/4 f4 es8 d \time 4/4 es4  c r c'' } \\
@@ -2380,7 +2381,7 @@ Au loin, la route éblouie s''élance en avant vers le jour
 Triomphe…… enchanté.
 
 Ah !…
-','actuel',NULL,NULL);
+','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(151,'4VM','Sables mouvants',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key e \minor \time 3/4 \partial 4*1 
 	<< { e4 g e g a2. g4 e g fis2. } \\
@@ -2388,7 +2389,7 @@ INSERT INTO "memento" VALUES(151,'4VM','Sables mouvants',NULL,NULL,NULL,'\new Ch
 	\new Staff { \clef F \key e \minor 
 	<< { e,4 c''2.~c4 c b a2. a } \\
 	   { e4 e2.~e4 g fis e2. dis4 b dis } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(152,'4VM','Sentiers valaisans (les)','M. Rémy','Georges Haenni',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \major \time 6/8 \partial 8*1 
 	<< { a''8 d cis b a4 b8 a4. fis4 r8 e fis g a a b  } \\ 
@@ -2413,7 +2414,7 @@ Refrain
 S''élançant vers l''infini
 Veillant sur les grands abîmes
 Ils vont jusqu''au paradis. 
-Refrain','restes',NULL,NULL);
+Refrain','restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(153,'4VM','Si tu passes','Yvette Kummer','Jean Mamie',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key c \major \time 6/8 \partial 8*2
     << { s4 s2. s4 r8 }
@@ -2442,7 +2443,7 @@ Répand l''image du bonheur.
 Tout le bourg s''anime avec toi.
 Un air chantant, un air de danse
 Retient l''automne qui s''en va.
-','répertoire',NULL,NULL);
+','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(154,'4VM','Soir d''octobre','Emile Gardaz','André Ducret',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key e \minor \time 3/4 \partial 4*1 
 	<< { e8 fis g4. fis8 e g b4 b fis8 g a4 g8 fis g fis } \\ 
@@ -2476,7 +2477,7 @@ Soir d''octobre à ma fenêtre.
 Faut-il être sage ou fou ?
 Faut-il être ou ne pas être ?
 Je veux vivre près de vous (bis).
-','répertoire',NULL,NULL);
+','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(155,'4VM','Soleil et la lune (le)',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key d \minor \time 2/2
 	<< { d''2 c b a r1 r2 r4 f8 g  } \\
@@ -2484,7 +2485,7 @@ INSERT INTO "memento" VALUES(155,'4VM','Soleil et la lune (le)',NULL,NULL,NULL,'
 	\new Staff { \clef F \key d \minor 
 	<< { d2 c d cis r4 <a f> r <a f> r <f d> <g cis,>4 r } \\
 	<< { d''2 c bes a d, c bes a4 r  } >> >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(156,'4VM','Sut steilas',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key d \major \time 6/8 
 	<< { d8 d e fis fis g a4 a8 b ais b d8. cis16 b8 b4. } \\ 
@@ -2492,7 +2493,7 @@ INSERT INTO "memento" VALUES(156,'4VM','Sut steilas',NULL,NULL,NULL,'\new ChoirS
 	\new Staff { \clef F \key d \major 
 	<< { d8 d cis b b d d4 cis8 d d d e8. e16 e8 d4. } \\
 	   { d8 d cis b b bes a4 a8 g g g e8. e16 e8 a4. } >> }
->>',NULL,'déchiffré',NULL,NULL);
+>>',NULL,'déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(157,'4VM','Svyché prorotsy',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key g \major \time 3/4 
 	<< { b'' b b b2 b4 b2 b4 b2 c4 b a g } \\ 
@@ -2500,7 +2501,7 @@ INSERT INTO "memento" VALUES(157,'4VM','Svyché prorotsy',NULL,NULL,NULL,'\new C
 	\new Staff { \clef F \key g \major 
 	<< { d4 d d d2 d4 d2 d4 d e e gis, a b } \\
 	   { g4 g g g2 g4 f2 f4 e2 d4 c c b } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(158,'4VM','Temps des cerises (le)',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key f \major \time 3/4 \partial 4*1 
 	<< { c4 f f f f2 f4 g g g g2 g4 a a a } \\ 
@@ -2508,7 +2509,7 @@ INSERT INTO "memento" VALUES(158,'4VM','Temps des cerises (le)',NULL,NULL,NULL,'
 	\new Staff { \clef F \key f \major 
 	<< { c,4 a'' a a d2 c4 bes bes c bes2 des4 c c d } \\
 	   { c,4 f f f a2 g4 f f g f2 bes4 a a a } >> }
->>',NULL,'entendu',NULL,NULL);
+>>',NULL,'entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(159,'4VM','Tibié paiom',NULL,'Dmitry Bortniansky',NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key c \major \time 4/4 \partial 4*1 
 	<< { e4 e2. e4 e2(d4) g f2. g4 f f e e  } \\ 
@@ -2523,7 +2524,7 @@ Gôspodi (bis)
 Imalimtisia Bôjénach''(ter) 
 Bôjénach''
 Malimtisia Bôjénach (bis)
-','répertoire',NULL,NULL);
+','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(160,'4VM','Tout au long du doubs',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key e \major \time 6/8 
 	<< { r8 e fis gis gis a b b cis dis cis b e4. e,} \\ 
@@ -2531,7 +2532,7 @@ INSERT INTO "memento" VALUES(160,'4VM','Tout au long du doubs',NULL,NULL,NULL,'\
 	\new Staff { \clef F \key e \major \time 6/8 
 	<< { gis,4 \repeat unfold 10 b8 cis4. gis } \\
 	   { e4 e8 e e e \repeat unfold 6 dis cis4. cis4( b8) } >> }
->>',NULL,'restes',NULL,NULL);
+>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(161,'4VM','Une île au soleil',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \major \time 4/4
 	<< { fis4 fis8 fis~fis2 g4 g8 g~g2 e4 e8 e~e d e4} \\ 
@@ -2539,7 +2540,7 @@ INSERT INTO "memento" VALUES(161,'4VM','Une île au soleil',NULL,NULL,NULL,'\new
 	\new Staff { \clef F \key d \major 
 	<< { a4 a8 a~a2 b4 b8 b~b2 g4 g8 g~g fis g4} \\ 
 	   { d4~d8 fis~fis4 a, e''4~e8 g~g4 b, a~a8 cis~cis4 a } >> }
->>',NULL,'répertoire',NULL,NULL);
+>>',NULL,'répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(162,'4VM','Un enfant nous dit',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key c \major \time 2/4 
 	<< { c8 d e e e4 \times 2/3 {e8 f g} a8 g g f e4 \times 2/3 {e8 f g} } \\
@@ -2547,7 +2548,7 @@ INSERT INTO "memento" VALUES(162,'4VM','Un enfant nous dit',NULL,NULL,NULL,'\new
 	\new Staff { \clef F \key c \major r2
 	<< { r4 \times 2/3 {c8 c c} b b b b c4 \times 2/3 {a8 a a} } \\
 	<< { r4 \times 2/3 {g8 g g} g g g g a4 \times 2/3 {a8 a e} } >> >> }
->>',NULL,'répertoire',NULL,NULL);
+>>',NULL,'répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(163,'4VM','Vent (le)',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key e \minor \time 4/4 \partial 4 
 	<< { b4 g''2 fis4 a8 g e2. e4 c''2 c8 b d c } \\ 
@@ -2555,7 +2556,7 @@ INSERT INTO "memento" VALUES(163,'4VM','Vent (le)',NULL,NULL,NULL,'\new ChoirSta
 	\new Staff { \clef F \key e \minor 
 	<< { b,4 b2 b4 b8 b b2. b4 e2 d8 d d d } \\ 
 	   { b,4 e2 dis4 fis8 fis g2. b4 a2 as8 as as as } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(164,'4VM','Vieille au coin du feu (la)',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key d \minor \time 3/4 
 	<< { r2. r r r } \\ 
@@ -2590,7 +2591,7 @@ Mais un tout premier cri, un enfant qui rit
 Un soupir sur tes lèvres endormies
 Une fille qui court vers son nouvel amour, la vie !
 C''est ça aussi la vie !
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(165,'4VM','Vieux chalet (le)','Joseph Bovet','Joseph Bovet',NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key as \major \time 3/4 \partial 4*1
 	<< { es4 es''4. des8 c8. des16 c4 bes es, es''8. des16 c4 bes } \\ 
@@ -2621,14 +2622,14 @@ L''est un nouveau chalet. (bis)
 Car Jean, d''un cœur vaillant
 L''a reconstruit plus beau qu''avant.
 Là-haut sur la montagne
-L''est un nouveau chalet.','répertoire',NULL,NULL);
+L''est un nouveau chalet.','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(166,'3VM','Viva tutte le vezzose',NULL,'Felice Giardini',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key f \major \time 2/4 \partial 4*1
 	<< { f8 g a f bes a g f a bes c a d c bes a c c } \\
 	   { r4 r2 r4 f,8 g a f bes a g f a a } >> }
 	\new Staff { \clef F \key f \major 
 	     r4 r2 r r r4 f,8 f } 
->>',NULL,'actuel',NULL,NULL);
+>>',NULL,'actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(167,'4VM','Vois le soleil',NULL,NULL,NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key a \minor \time 6/8 \partial 8*3 
 	<< { e8 d e f4. a8 g f e4. e8 d e f4. g8 a b c4. a8 a a} \\ 
@@ -2636,7 +2637,7 @@ INSERT INTO "memento" VALUES(167,'4VM','Vois le soleil',NULL,NULL,NULL,'\new Cho
 	\new Staff { \clef F \key a \minor r4. r4.
 	<< { s4. s4. e,8 d e f4. g8 a b e4. a,8 a a} \\ 
 	   { d,4.( a) e''8 d e f4. g8 a b a4. a8 a a } >> }
->>',NULL,'ancien',NULL,NULL);
+>>',NULL,'ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(168,'4VM','Voleur','Stéphane Blok','Nicolaï Schlupp',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key e \major \time 6/8 
 	<< { gis''4 a8 b4. e,4 fis8 gis4 b,8 cis dis e fis4 a8 gis4. fis } \\ 
@@ -2670,7 +2671,7 @@ Refrain
 4. Quel que soit, le voleur,
 Qui a pris dans ma besace de cuir bleu
 Un souci,une pluie,
-Un souci minutieux et sans complice.','déchiffré',NULL,NULL);
+Un souci minutieux et sans complice.','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(169,'4VM','Vous perdez temps de me dire mal d''elle','Clément Marot','Claudin de Sermissy',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key a \minor \time 2/2 
 	<< { a''2 g4 g a2 b b4 b c c a2 g~g r4 c } \\
@@ -2688,7 +2689,7 @@ N''est-ce rien de ses grâces,
 Cessez, cessez vos grands audaces,
 Car mon amour vaincra votre médire :
 Tel en médit qui pour soi la désire. Bis
-','actuel',NULL,NULL);
+','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(170,'4VM','Zum gali, gali',NULL,NULL,'Richard Pisano','\new ChoirStaff 
 <<  \new Staff { \clef G \key d \minor \time 4/4 r1 r1
 	<< { r1 } \\
@@ -2712,14 +2713,14 @@ Avodah le man hechalutz
 Hechalutz le man avodah
 
 Avodah Avodah Avodah Avodah Avodah
-','actuel',NULL,NULL);
+','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(171,'4VM','Trois Noëls',NULL,'Jean Daetwyler',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 3/8 
   << { r4. r r r g''4 a8 b4 g8 a4 fis8 g4. } \\
      { d4 d8 d4 d8 d4 d8 d4 d8 d4 d8 d4 d8 e4 e8 d4 d8 } >> }
   \new Staff { \clef F \key g \major 
     << { b4 b8 b4 b8 b4 b8 b4 b8 b4 b8  b4 b8 c4 c8 b4 b8 } \\
        { g4 g8 g4 g8 g4 g8 g4 g8 g4 g8 g4 g8 g4 g8 g4 g8  } >> }>>
-',NULL,'actuel',NULL,NULL);
+',NULL,'actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(172,'4VM','Tombe la neige','Jean-Marie Kolly','Jean-Marie Kolly',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 3/4
   << { c4 f g a2 a4 a c a g2 f4 f g a bes2 bes4 bes a f } \\
      {  c4 f e f2 f4 f f e e2 d4 d d d d2 g4 g f d } >> }
@@ -2743,7 +2744,7 @@ Et je redoute, je crains le froid
 Mais si je suis vraiment son étoile
 Noël revient tout comme autrefois 
 Refrain
-','ancien',NULL,NULL);
+','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(173,'4VM','Gerusalemme','Bepi De Marzi','Bepi De Marzi',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key d \minor \time 2/4
   << { a''4 a8 a a4 a8 a a a a a a4 a a8 a a a a4 a } \\
      { f4 f8 f f4 f8 f f f f f f4 f f8 f f f e4 e } >> }
@@ -2762,13 +2763,13 @@ e intorno si fa sera.
 Non lasciate sola la madre di Gesù.
 Dove sono gli angeli che nella notte santa cantavano la pace?
 Piange, Maria
-e intorno si fa sera. Sera.','actuel',NULL,NULL);
+e intorno si fa sera. Sera.','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(174,'4VM','Passe le pont','Jacques Bron','Patrick Bron',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key d \major \time 6/8 \partial 8*3
   << { a''8 fis b a4. fis8 e d fis4 fis8 fis a fis e4. d8 b d a4. a''8 fis b } \\
      { a8 fis b a4. fis8 e d fis4 fis8 d e d b4. a8 g a a4. a''8 fis b } >> }
   \new Staff { \clef F \key d \major
     << { a,8 fis b a4. fis8 e d a''4 a8 a b a g4. fis8 d fis e4. a8 fis b } \\
-       { a8 fis b a4. fis8 e d a''4 a8 d,4.~d a~a a''8 fis b } >> }>>',NULL,'inconnu',NULL,NULL);
+       { a8 fis b a4. fis8 e d a''4 a8 d,4.~d a~a a''8 fis b } >> }>>',NULL,'inconnu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(175,'4VH','Chante en mon cœur pays aimé','Pierre Kaelin','Pierre Kaelin','André Ducret','\new ChoirStaff << \new Staff { \clef "G_8" \key f \major \time 4/4 \partial 4*1
   << { r4 c2 d4 f8 f f f e d e e e e } \\ 
       { f,8 g a4 a8 a a4 bes8 c c g g g g g a a } >> }
@@ -2809,7 +2810,7 @@ Souvenirs de mon enfance,
 Reste jeune (à jamais), 
 A tout jamais.
 Refrain
-',NULL,'déchiffré',NULL);
+',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(176,'4VM','Berceuse Russe','Didier Rimaud','Roger Calmel',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key d \major \time 4/4 \partial 4*1
   << { s4 } \\
      {  } >> }
@@ -2834,7 +2835,7 @@ Refrain
 Il n''est pas de nuit sans matin,
 Le soleil reviendra demain.
 Refrain
-','entendu',NULL,NULL);
+','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(177,'4VH','Qu''on me rende à cette terre','Maurice Budry',NULL,'Alexandre Vassilievitch Aleksandrov','\new ChoirStaff << \new Staff { \clef "G_8" \key f \minor \time 3/4 
   r4 << { c8 c c c c c c4 f es8 des c4 bes8 as g bes as2 } \\ 
       { c8 c bes as g bes as4 des es8 des as4 g8 f e4 f2 } >> }
@@ -2857,7 +2858,7 @@ Vous verrez, alors, mon âme
 Se jouer dans le vent ;
 Je serai comme la flamme 
 D''un épi dans vos champs.
-',NULL,'ancien',NULL);
+',NULL,'ancien',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(178,'4VM','Chant du lac','Géo-H. Blanc','Carlo Hemmerling',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key es \major \time 4/4 \partial 4*1
   << { s4 } \\
      {  } >> }
@@ -2888,7 +2889,7 @@ Cependant, assis auprès du rivage,
 Nous devinerons ton visage.
 Ô mon beau lac pur,
 Ô mon lac, ô mon beau lac sage.
-','inconnu',NULL,NULL);
+','inconnu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(179,'4VM','Joie, le temps','Bernard Ducarroz','Francis Volery',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key c \major \time 4/4 \partial 4*1
   << { s4 } \\
      {  } >> }
@@ -2918,7 +2919,7 @@ Quand on chante, on a tout compris.
 Refrain
 Coda:
 Car le temps d''être ensemble, c''est le temps le plus beau
-','inconnu',NULL,NULL);
+','inconnu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(180,'4VH','Cantique suisse','Ch. Chatelanat','A.Zwissig',NULL,'\new ChoirStaff <<  \new Staff { \clef "G_8" \key es \major \time 3/4 
   << { bes8. bes16 bes4 es es8. d16 d4 r bes8. bes16 bes4 f''   } \\
      { bes,8. bes16 bes4 bes bes8. bes16 bes4 r as8. as16 as4 d8 bes  } >>  } 
@@ -2950,7 +2951,7 @@ Il est notre forteresse.
 Offrons-lui des cœurs pieux, (bis)
 Dieu nos bénira des cieux,
 Dieu nous bénira du haut des cieux.
-',NULL,'entendu',NULL);
+',NULL,'entendu',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(181,'4VM','On a le cœur qui bat','Michel Schwingrouber','Michel Schwingrouber',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key c \major \time 4/4 \partial 4*1
   << { s4 } \\
      {  } >> }
@@ -2982,7 +2983,7 @@ On a le cœur qui bat pour le chant d''un oiseau
 On a les veux fermés au bonheur caché. 
 La la la la la la ...
 on a le cœur qui bat.
-','entendu',NULL,NULL);
+','entendu',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(182,'4VM','Berceuse des anges (la)',NULL,'Jean Daetwyler',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 3/8 
   << { r4. r r r g''4 a8 b4 g8 a4 fis8 } \\
      { d4 d8 d4 d8 d4 d8 d4 d8 d4 d8 d4 d8 e4 e8 } >> }
@@ -3012,7 +3013,7 @@ La Vierge Marie.
 Refrain
 
 Coda:
-Dans le calme de la nuit','déchiffré',NULL,NULL);
+Dans le calme de la nuit','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(183,'4VM','Noël anniviard',NULL,'Jean Daetwyler',NULL,'\new Staff { \clef F \key g \major  \time 6/8 \partial 8*1
 d,8 g4 a8 b4 b8 b a b d4 e8 d4. b \partial 8*5 d~d4 
 \clef G \partial 8*1 d8 
@@ -3042,7 +3043,7 @@ Refrain
 qu''avez-vous dit ?
 [SA] A St-Joseph son Père, à la Vierge Marie 
 Avons fait la prière, d''être en Paradis
-Refrain','actuel',NULL,NULL);
+Refrain','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(184,'4VM','Sera sper il lag, la','Flurin Camathias','Gion B. Casanova',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key d \major \time 4/4 \partial 8*3
   << { d8 d e fis4. fis8 e fis g e fis4 fis4 r8 fis g a } \\
      { a,8 a a d4. d8 d d d d e4 d8 cis d d e fis } >> }
@@ -3056,7 +3057,7 @@ davos ils cuolms eil sesbassaus
 2. E giu da tchiel da tschiel las stailas biaras
 migaivel miran giu el stgir
 miu cor tiaille aunc  empiaras
-va era ti tier dultsch dumir','actuel',NULL,NULL);
+va era ti tier dultsch dumir','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(185,'4VM','Failloubaz| Y''a tout qui décolle!','Bernard Ducarroz','Pierre Huwiler',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key d \major \time 4/4 \partial 8*3
   << { a''8 a g fis2~fis8 g fis e d2 r8 d fis a  b2 \times 2/3 {gis4 gis a}} \\
      { a8 a g fis2~fis8 g fis e d2 r8 d d d e2  \times 2/3 {e4 e d} } >> }
@@ -3105,7 +3106,7 @@ Adieu la boussole
 Il est reparti
 Y a tout oui décolle
 Il est reparti
-','déchiffré',NULL,NULL);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(186,'4VM','Failloubaz| Chanson de l''Albatros','Vincent Francey','Lucas Francey',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key a \minor \time 2/2
   << { f4 c''2.~c1 f,4 c''2 d4 b1 c4 d \times 2/3 {e d c} d2. b4  } \\
      { f1 f f4 g2.~g1~g2 a2~a2. g4  } >> }
@@ -3142,7 +3143,7 @@ L''albatros s''appelle Failloubaz
 Il nous chante un refrain qui s''en va
 
 Coda:
-Il nous chante un refrain qui s''en va','déchiffré',NULL,NULL);
+Il nous chante un refrain qui s''en va','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(187,'4VM','Failloubaz| Envole-toi','Bernard Ducarroz','Fabien Volery',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key c \major \time 6/8 \partial 8*1
   << { d16 d a''4 fis16 gis a4. a4 e16 e b''8 b16 cis b8 } \\
      { d,16 d a''4 fis16 gis d4 e8 fis4 e16 e b''8 b16 cis b8 } >> }
@@ -3177,7 +3178,7 @@ Refrain
 
 Coda:
 c''est la vie que l''on sème
-Failloubaz! CENT ANS DE JOIE!','déchiffré',NULL,NULL);
+Failloubaz! CENT ANS DE JOIE!','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(188,'4VM','Failloubaz| Chant d''Orage','Vincent Francey','Francis Volery',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \minor \time 4/4
   << { r2 r8 f8 f f g4 g2.~g2 r2 } \\
      { r2 r8 f8 f f g4 f2.~f2 r2 } >> }
@@ -3215,7 +3216,7 @@ Tonnerre de Brest...
 Grêlons d''horreur 
 Plus rien ne rest''
 Sinon l''malheur...
-','déchiffré',NULL,NULL);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(189,'4VM','Failloubaz| Partir ou revenir','Patrick Charles','Fabien Renevey',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 3/4 \partial 4*1
   << { g''8 a b4 b8 g a b d4 c c8 b a4 a8 fis g a b2 b8b } \\
      { e,8 fis g4 g8 e fis g g4 g a8 g fis4 fis8 d e fis g2 g8 g } >> }
@@ -3273,7 +3274,7 @@ Quand la vie s''échappe toutefois
 Tends la voile jusqu''au prochain port 
 Ici-bas tu rêvais d''être roi
 Mais là-haut, les vents chantent pour toi
-','déchiffré',NULL,NULL);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(190,'4VM','Failloubaz| La part des étoiles','Patrick Charles','Fabien Volery',NULL,'\new Staff { \clef G \key g \minor \time 4/4
  d''4 bes c8 bes a4 bes8 a g a d,2 g8 bes a g f2 d8 e f e d2 }','1. Quand la fleur s''éteint au soir des saisons, 
 Comm''un jour déteint au toit des maisons. 
@@ -3304,7 +3305,7 @@ Refrain
 
 Coda:
 La part des étoiles
-','déchiffré',NULL,NULL);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(191,'4VM','Brésilien','Claude Nougaro','Gilberto Gil','Pierre Huwiler','\new ChoirStaff <<  \new Staff { \clef G \key e \major \time 4/4 \partial 8*1
   << { e16 fis gis8 e a gis fis e e fis gis16 e8. a16 gis8 fis16 e4 r8 a16 b } \\
      { e,16 fis e8 e e e e e e e e16 e8. e16 e8 e16  e4 r8 e16 e } >> }
@@ -3344,7 +3345,7 @@ Coda:
 Débarque avec ton Brésil.
 Débarque avec ton Brésil.
 Hey !
-','actuel',NULL,NULL);
+','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(192,'4VH','Failloubaz| La foule attend...','Bernard Ducarroz','Pierre Huwiler',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key g \major \time 4/4 
   << {r16  b b b d b b b c4 b r16 a a a c a a g a2 } \\ 
       { r16 g g g b g g g g4 g r16 e e e a e e g fis2 } >> }
@@ -3394,7 +3395,7 @@ Coda:
 La foule attend son bel Icare 
 Et le soleil n''a qu''à laisser 
 Les envolées pour la fanfare 
-Et les pistons pour naviguer',NULL,'actuel',NULL);
+Et les pistons pour naviguer',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(193,'4VH','Failloubaz| Vissez l''hélice','Vincent Francey','Lucas Francey',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key g \minor \time 4/4
   r1 r1 << { \override NoteHead #''style = #''cross r1 d8 d16 d d8 d d d d4 \revert NoteHead #''style } \\ 
       {  g,4-. d-. g-. d-. g-. d-. g-. d-.  } >> }
@@ -3441,7 +3442,7 @@ Et vous détraque
 Quand elle se braque
 Est fanatique
 C''est toi qui claqu''
-Refrain',NULL,'actuel',NULL);
+Refrain',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(194,'4VH','Failloubaz| La fille de l''air','Patrick Charles','Fabien Renevey',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key g \minor \time 4/4 \partial 8*3
   << { d,8 d d d''2~d8 d es d c2~c8 c d c } \\ 
       { d,8 d d bes''2~bes8 bes c bes a2~a8 a bes a } >> }
@@ -3483,7 +3484,7 @@ Refrain:
 Mais peut-être, au vent d''espoir
 Comme un printemps qui revient
 Seras-tu là par un beau soir
-Pour rallumer mon cœur éteint?',NULL,'actuel',NULL);
+Pour rallumer mon cœur éteint?',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(195,'4VH','Failloubaz| Je t''inventerai des rêves','Patrick Charles','Fabien Volery',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key g \major \time 3/4 \partial 4*2
   << { d,8 d d d d''2 e4 e4.e8 e e c4 c8 c c d d4 r8 d d d } \\ 
       { d,8 d d d b''2 b4 b4. b8 b b b4 a8 a a a a4 r8 a a a } >> }
@@ -3531,7 +3532,7 @@ Refrain
 
 Coda:
 Je t''inventerai des rêves.
-',NULL,'actuel',NULL);
+',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(196,'4VH','Failloubaz| La polka des colonels','Vincent Francey','Francis Volery',NULL,'  \new Staff { \clef F \key es \major  \time 4/4 
   << { \repeat volta 2 { es,8 bes''16 bes bes8 bes16 bes es,8 bes'' ~bes4 es,8 bes''16 bes bes8 bes16 bes es,8 bes'' ~bes4} } \\ 
       { es,8 bes''16 bes bes8 bes16 bes es,8 bes'' ~bes4 es,8 bes4 es8 g4 es } >> }
@@ -3572,7 +3573,7 @@ Pour le pays (6x)
 [Tous] Le vin d''ici, foutra la frousse
 A l''ennemi, à l''ennemi...
 Et si jamais, il a l''bouchon,
-On rentrera à la maison. ',NULL,'actuel',NULL);
+On rentrera à la maison. ',NULL,'actuel',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(197,'4VH','Failloubaz| Envole-toi','Bernard Ducarroz','Fabien Volery',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key c \major \time 6/8
   << { r2. d8 e d cis16 b d4 d4. e8 fis g } \\ 
       { g,4 g8 g4 g8 g4 a8 a4 b8 b4 a8 a4 a8 } >> }
@@ -3607,7 +3608,7 @@ Refrain
 
 Coda:
 c''est la vie que l''on sème
-Failloubaz! CENT ANS DE JOIE!',NULL,'déchiffré',NULL);
+Failloubaz! CENT ANS DE JOIE!',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(198,'4VM','Adeste Fideles',NULL,NULL,'Pierre Kählin','\new Staff { \clef "G_8" \key g \major \time 4/4 \partial 4 
   g4 g2 d4 g a4.( fis8) d4 r4 b''4 a4 b c b2 a4 g g2 fis4 e }
 ','1. Adeste fideles
@@ -3634,7 +3635,7 @@ Natum videte,
 Regem angelorum,
 Venite adoremus (3x)
 Dominum.
-','restes',NULL,NULL);
+','restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(199,'4VM','Un violon, un jambon','Serge Gainsbourg','Serge Gainsbourg','Norbert Ott','\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 2/2
   << { c''2 c4 c c2 a4 c d2 a4 d c2 a bes1 } \\
      { a2 a4 a a2 a4 g f2 d4 d e2 c d1 } >> }
@@ -3660,7 +3661,7 @@ Chose, t''en fais donc pas
 Mon vieux quand on n''a pas ce que l''on aime
 Faut aimer c''que l''on a
 Refrain
-',NULL,'déchiffré',NULL);
+',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(200,'4VM','Bleu, Blanc, Blond','Jean Drejac','Hal Greene & Dick Wolf','Michel Schwingrouber','\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 4/4 
   << {  b''4 b b8 a g b a g fis4 r2 a4 a a8 g fis a  } \\
      { g4 g d8 c b d d e d4 r2 fis4 fis fis2   } >> }	
@@ -3688,7 +3689,7 @@ Refrain
 Déferlent en flots le gers
 Blonds blonds blonds sur une grève
 Je voudrais naufrager
-Refrain','déchiffré',NULL,NULL);
+Refrain','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(201,'4VM','Batelier (le)','Yvette Kummer','Jean Mamie',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 3/8 
   << { d''8 a a a4 g8 a4.~a4 r8 d4 a8 g a bes a4. a4 r8 } \\
      { f4. e d e4 r8 f4 f8 g a bes a4 g8 f4 e8 } >> }
@@ -3715,7 +3716,7 @@ Tandis que lui cligne des yeux
 Complice heureux de tant de bleu.
 Refrain
 Coda:
-Le batelier glisse hors du temps','actuel',NULL,NULL);
+Le batelier glisse hors du temps','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(202,'4VM','Bagatelles pour un sacre','Antoine Rosselet','Emmanuel Violi',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 4/4 
   << { c''4 a8 bes c4. d8 c bes bes a a4 g f g8 a c4 bes8 a } \\
      { f2 e f f4 e d d8 f g4 g8 f } >> }
@@ -3746,7 +3747,7 @@ Dom dom dom...
 Vivent repues cigales et prières, 
 Comm'' les chansonniers d''hier. 
 Verbe qui plane dans la clairière,
-Mânes joyeux dont les âmes chantent clair.','déchiffré',NULL,NULL);
+Mânes joyeux dont les âmes chantent clair.','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(203,'3VM','Puce et le pianiste (la)','Yves Duteil','Yves Duteil','Norbert Ott','\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 3/4 \partial 8*1
   << { c8 c4 c''2 d4 d d c bes e, f f f8  f  } \\
      { c8 c4 f2 f4 g f e  c c c c f8 f } >> }
@@ -3786,7 +3787,7 @@ Mais dans la salle on applaudissait
 Sans deviner que c''était
 Grâce à une puce énervée
 Que le jazz était né.
-','déchiffré',NULL,NULL);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(204,'4VM','Viens dans ma rue','André Pascal','Paul Mauriat','Patrick Le Fèvre','\new ChoirStaff <<  \new Staff { \clef G \key c \major \time 3/4
   << { c''4 c c c c b b b a a2. a4 a4. b8 b2. } \\
      { e,4 e e e e e e e e e2. f4 f4. f8 f2. } >> }
@@ -3835,7 +3836,7 @@ Que cette fille qui t''aimait, c''était moi
 Viens dans ma ville, viens dans ma rue
 Et je suis sûre qu''en dansant tu verras
 Que cette fille qui t''aime, c''est bien moi
-C''est bien moi, c''est bien moi ','déchiffré',NULL,NULL);
+C''est bien moi, c''est bien moi ','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(205,'4VH','Pèlerin d''ailleurs','Antoine Rosselet','Emmanuel Violi',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key es \major \time 2/4 \partial 4*1
   << { bes4 d8 d d d d4 bes d8d d d c4 c8 d es4 d8 c c2 } \\ 
       { bes4 bes8 bes bes bes bes4 bes bes8 bes bes bes as4 as8 bes bes4 bes8 bes a2 } >> }
@@ -3867,7 +3868,7 @@ Partir toujours plus loin vers cet Eldorado qu''est l''Ailleurs,
 le meilleur, le plus grand, le plus beau.
 Je ne sais s''il est vrai qu''Ailleurs est loin d''ici,
 mais si j''étais resté là, c''est moi que j''aurais fui.
-',NULL,'déchiffré',NULL);
+',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(206,'4VH','Montanara (la)','Toni Ortelli','Toni Ortelli','Luigi Pigarelli','\new ChoirStaff << \new Staff { \clef "G_8" \key bes \major \time 3/4
   << { f,4 bes8. bes16 d8. d16 g4 f4. d8 g4 f4. d8 es d c2 } \\ 
       { f,4 f8. f16 bes8. bes16 es4 d4. bes8 es4 d4. bes8 c bes a2 } >> }
@@ -3885,7 +3886,7 @@ Là su sui monti dei rivi d''argento
 une caponne cosparsa di tior
 era la piccolo dolce dimora
 di Soreghina la figlia del Sol,
-la figlia del Sol.',NULL,'déchiffré',NULL);
+la figlia del Sol.',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(207,'4VM','Owé bangué','Bernard Ducarroz','Pierre Huwiler',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \minor \time 4/4 
   << { r2 g''8 bes4. r1 g8. f16 g8. g16~g2 } \\
      { r2 g8 g4. r1 d8. c16 d8. d16~d2 } >> }
@@ -3917,7 +3918,7 @@ Faut le piler piler tôt le sorgho de ton silo
 Le tam-tam à fleur de peau ! Owé banguo
 Coda:
 Owé bangué! Owé banguo!
-Bango!','actuel',NULL,NULL);
+Bango!','actuel',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(208,'3VM','Bruit de mon cœur (le)','Janry Varnel','Thierry Fervant',NULL,'\new Staff { \clef G \key f \major  \time 4/4
  d4 d8 f e f~f4 d2 r4 f4 e d cis8 d~d4 e2. r4 }
 ','C''est le bruit de mon cœur
@@ -3936,7 +3937,7 @@ Qui me dit d''avancer.
 C''est le bruit de mon cœur
 Je l''entends qui dit: "Garde de tes amis".
 C''est le bruit de mon cœur
-Qui me dit d''aimer.','déchiffré',NULL,NULL);
+Qui me dit d''aimer.','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(210,'4VM','Jascha joue','Maurice Budry','Wilhelm Heinrichs',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key g \minor \time 4/4
   << { r2. g4 d'' d d d8 c d4 g,2 g4 d'' d d d8 c d4 g,2 g4 } \\ 
       { r1 r r r r2. g4  } >> }
@@ -3969,25 +3970,25 @@ Vers Jaschka qui fait danser, c''est Jaschka qui fait danser, c''est Jaschka !
 Refrain
 
 Coda:
-C''est lui, c''est Jaschka',NULL,'restes',NULL);
+C''est lui, c''est Jaschka',NULL,'restes',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(211,'4VH','Je ne trouve pas les mots','Cédric Cassimo','Nicolaï Schlupp',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key bes \major \time 2/4 \partial 4*1
   r4 r << { c4 bes2~bes8 d es c d2 es8 d c d d2 } \\ 
       { c4 bes2~bes8 bes c a bes2 bes8 bes bes a bes2 } >> }
   \new Staff { \clef F \key bes \major 
   << { bes,4 f''2~f8 d es f g2~g g8 f f f f2 } \\ 
-      {bes,4 f''2~f8 d es f g2~g c,8 d es f bes,2 } >> }>>',NULL,NULL,'déchiffré',NULL);
+      {bes,4 f''2~f8 d es f g2~g c,8 d es f bes,2 } >> }>>',NULL,NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(212,'4VH','Noël, au vent d''étoiles','Bernard Ducarroz','Dominique Gesseney-Rappo',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key e \minor \time 3/4 \partial 4*1
   << { g8 a b4. b8 b b c4 c d8 e e4. d8 d c b2 g8 a } \\ 
       { g8 a b4. b8 b b c4 c d8 e e4. d8 d c b2 g8 a } >> }
   \new Staff { \clef F \key e \minor 
   r4 << { g4 g2 g4 g2 fis4 fis2 g4 g2 } \\ 
-      { e4 e2 e4 e2 b4 b2 e4 e2 } >> }>>',NULL,'restes',NULL,NULL);
+      { e4 e2 e4 e2 b4 b2 e4 e2 } >> }>>',NULL,'restes',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(213,'4VH','Sanctus',NULL,'Friedrich Silcher',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key f \major \time 4/2
   << { c1 c2 r c1 c2 r c1 c2 c c1 c2 c4 c  } \\ 
       {  a1 a2 r bes1 bes2 r a1 g2 f g1 g2 g4 g } >> }
   \new Staff { \clef F \key f \major 
   << { f1 f2 r g1 g2 r f1 e2 d e1 e2 e4 e } \\ 
-      { f1 f2 r e1 e2 r f1 e2 d c1 c2 c4 c } >> }>>',NULL,NULL,'répertoire',NULL);
+      { f1 f2 r e1 e2 r f1 e2 d c1 c2 c4 c } >> }>>',NULL,NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(214,'4VH','Si tu passes','Yvette Kummer','Jean Mamie',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key c \major \time 6/8 \partial 8*2
   << { e,8 e c''4. b8 a gis a4 r8 a b c d4 d8 c4 c8 } \\ 
       { e,8 e a4. f8 a gis a4 r8 a b a a4 a8 c4 a8 } >> }
@@ -4013,7 +4014,7 @@ Répand l''image du bonheur.
 Tout le bourg s''anime avec toi.
 Un air chantant, un air de danse
 Retient l''automne qui s''en va.
-',NULL,'répertoire',NULL);
+',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(215,'4VM','Yeux de la Marianita','Jacques Chailley',NULL,'Jacques Chailly','\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 4/4 \partial 4*1
   << { d4 g g8 g g4 b d d2 e4 d c8 b a4 c b g~g8 r d4 } \\
      { d4 d d8 d e4 e fis fis2 g4 fis e8 d c4 g'' fis e d c } >> }
@@ -4028,7 +4029,7 @@ Marianita est ma mie, Marianita est mon bien
 3. Les yeux de la Marianita ont la couleur des ténèbres (2x)
 Marianita est ma mie, Marianita est mon bien
 
-','déchiffré','NULL',NULL);
+','déchiffré','NULL',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(216,'4VM','Noël de Simon (le)','Joseph Bovet','Joseph Bovet',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 2/4
   << { b''8 a g a b4 a8 g a4 b g e e8 fis g b fis2 } \\
      { g8 fis e fis g4 fis8 e fis4 dis e e e8 dis e e dis2 } >> }
@@ -4057,7 +4058,7 @@ Il ne souffre plus, se tient sans appui.
 5. D''un de ses moutons, portant la parure,
 A l''Enfant divin, il en fait cadeau;
 La Vierge en tissa l''habit sans couture
-Qui vêtit Jésus, le divin Agneau.','déchiffré',NULL,NULL);
+Qui vêtit Jésus, le divin Agneau.','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(217,'4VM','Santo',NULL,NULL,'Tore W. Aas','
 \new ChoirStaff <<  \new Staff { \clef G \key c \major \time 4/4 
   e4. e8 e4. d8 d4 c2 c4 s1 
@@ -4069,7 +4070,7 @@ INSERT INTO "memento" VALUES(217,'4VM','Santo',NULL,NULL,'Tore W. Aas','
 Mi corazon te adora,
 Mi corazon te sabe decir:
 Santo eres Señor.
-(4x)','déchiffré',NULL,'');
+(4x)','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(218,'4VM','Bonjour, les beaux jours!','Jean-Michel Monney','Jean-Michel Monney',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 4/4 
   << { a''8 c~c2~c8 a bes c~c2 r8 a c4 c8 c c bes a bes~ } \\
      { f8 a~a2~a8 f g g~g2 r8 f a4 a8 a a g f g~ } >> }
@@ -4104,7 +4105,7 @@ Harmonie de tous ramages!
 3. Les vergers fleurissent en rêvant
 Qu''ils épousent les abeilles;
 Elle nous promet la noce du printemps,
-Plein de fruits dans nos corbeilles!','déchiffré',NULL,NULL);
+Plein de fruits dans nos corbeilles!','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(219,'4VM','Angelus Domini','','Michel Corboz',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key b \minor \time 4/4
   << { e4 g fis e a g8 fis e d e4 fis4. fis8 fis2 } \\
      { e4 g fis e a g8 fis e d e4 cis4. cis8 cis2 } >> }
@@ -4117,7 +4118,7 @@ Alleluia (19x)
 [TB] Angelus descendit de caelo
 Et dixit mulieribus:
 Quem quaeritis, surrexit, sicut dixit.
-Alleluia (13x)','déchiffré',NULL,NULL);
+Alleluia (13x)','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(220,'4VM','Angelo','Pierre Delanoë','Jean-Pierre Calvet','Jean-Claude Oudot','\new Staff { \clef G \key f \minor  \time 4/4
   as''8. as16  as8. as16 as8 as as as bes4 as2 g8. f16 as1
  }
@@ -4156,7 +4157,7 @@ Députatione Et religione, combinazione Et avanti
 [SA] Et Al Capone [TB]Et religione
 [SA]Cosa cosi [TB]Cosa cosi
 [SA]Deputatione [TB]Et cardinale [SA]Et religione 
-[Tous]Et viva la combinatoire Et avanti.','déchiffré',NULL,NULL);
+[Tous]Et viva la combinatoire Et avanti.','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(221,'4VH','Amsterdam','Jacques Brel','Jacques Brel','Jean-Claude Guermann','\new ChoirStaff << \new Staff { \clef "G_8" \key a \minor \time 6/4 \partial 4*1
   << { e,8 e a4 a b c2 d8 c b4 g g g2 a8 b c4 a a a2 g8 a } \\ 
       {  e8 e a4 a b c2 d8 c b4 g g g2 a8 b c4 a a a2 g8 a   } >> }
@@ -4197,7 +4198,7 @@ Qui leur donnent leur joli corps , qui leur donnent leur vertu
 Pour une pièce d''or ; et quand ils ont bien bu
 Se plantent le nez au ciel se mouchent dans les étoiles
 Et ils pissent comme je pleure sur les femmes infidèles
-Dans le port d''Amsterdam, dans le port d''Amsterdam.',NULL,'déchiffré',NULL);
+Dans le port d''Amsterdam, dans le port d''Amsterdam.',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(222,'4VH','Panis Angelicus',NULL,'Bernard Rey',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key es \major \time 4/4 
   << { bes2 bes4 bes c4. c8 c4 c d2 es es4. d8 es2  } \\ 
       { g,2 g4 g as4. as8 as4 g bes2 bes bes4. bes8 bes2 } >> }
@@ -4216,7 +4217,7 @@ Ducnoquo tendimus, ducnoquo tendimus
 Ad Lucem quam adlucem quam in habitas
 
 Coda:
-Amen!',NULL,'déchiffré',NULL);
+Amen!',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(223,'4VH','Agnus Dei',NULL,NULL,NULL,'\new Staff { \clef "G_8" \key bes \major  \time 3/4
  g2 c4 c b4. g8 g4 b4. d8 d4 c r8 g g4 c es
 }
@@ -4229,7 +4230,7 @@ Qui tollis peccata mundi.
 Agnus dei, qui tollis peccata, 
 Qui tollis peccata peccata mundi.
 Dona nobis dona dona nobis pacem,
-Dona nobis pacem.',NULL,'déchiffré',NULL);
+Dona nobis pacem.',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(224,'4VH','Ave Maria',NULL,'André Ducret',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key g \major \time 3/4 
   << { b4 g4. b8 d4 d2 b4. d8 b a b2 b4 c8. b16 a4. c8 } \\ 
       { g4g4. g8 a4 a2 g4 g fis fis2 fis4 a8. a16 a2  } >> }
@@ -4243,7 +4244,7 @@ Sancta Maria mater Dei,
 Ora pro nobis peccatoribus,
 Nunc et in hora mortis nostrae.
 Amen, amen.
-',NULL,'déchiffré',1);
+',NULL,'déchiffré',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(225,'4VM','Père Noé (le)','Louis Despont','Gonzague Monney',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 3/4
   << { b''4 b b g2. a4 a a e2. fis4 d2 g4 d2 a''4 b c  } \\
      { d,2. d2 d4 c2. c4 b c d2 d4 d2. d } >> }
@@ -4282,7 +4283,7 @@ Le temps s''arrang'' vers Arafat.
 Barre à tribord et branlebas!
 On voudrait pas rater l''aubain'' !!!
 Refrain
-Coda','déchiffré',NULL,1);
+Coda','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(226,'4VM','Félicie aussi','A. Willemetz, Ch. L. Pothier','C. Oberfeld','M. Schwingrouber','\new ChoirStaff <<  \new Staff { \clef G \key c \major \time 4/4
  r1 r  << { g''8. a16 g8. e16 d4 c8 e g4 g2. } \\
      { e8. e16 e8. c16 b4 c8 c e4 e2. } >> }
@@ -4352,7 +4353,7 @@ Et des draps de toiles molles
 Me chatouillaient les guiboles
 Félicie aussi
      
-','déchiffré',NULL,1);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(227,'3VM','Julie','Maurice Vidalin','Jacques Datin','Norbert Ott','\new ChoirStaff <<  \new Staff { \clef G \key d \minor \time 4/4 
   << { r2. d''4 g,2 r r4 bes8 bes bes4 c } \\
      { d,8 e f g a2 g8 f e f g a g4 f8 e d e f4 e8 d } >> }
@@ -4405,7 +4406,7 @@ De la tapisserie,
 De la pâtisserie,
 En attendant le jour,
 Qui ne saurait tarder,
-De votre liberté.','déchiffré',NULL,1);
+De votre liberté.','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(228,'3VM','Allons danser la Saint-Jean','Georges Carrel','Jean Rochat',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key e \major \time 2/4 \partial 4*1
   << { b8 b e4 fis8 gis16 a b8 b a b cis b a gis fis4 b,8 b  } \\
      { b8 b e4 fis8 gis16 fis e8 e e e e e cis e dis4 b8 b } >> }
@@ -4444,7 +4445,7 @@ A Moscou et même en France,
 Entonnez ce gai refrain!
 Refrain
 
-','déchiffré',NULL,1);
+','déchiffré',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(229,'4VM','Notre Broye','Jean-Pierre Noverraz','Jean-Pierre Noverraz',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 6/8 
   << { b''8 g b d4 b8 a2. a8 fis a d4 c8 b2. g8 a b c4 d8 } \\
      { g,8 d d g4 g8 fis2. fis8 a fis d4 d8 g2. d8 fis d g4 d8 } >> }
@@ -4490,7 +4491,7 @@ Payerne Avenches tous à la file
 Venus de loin pour admirer
 Une rivière que Dieu envoie
 Pour notre bien Merci la Broye.
-','déchiffré','',1);
+','déchiffré','',NULL,NULL,'Pièce d''ensemble Giron de Corcelles 2011');
 INSERT INTO "memento" VALUES(230,'3VM, 3VH','Eternel est mon berger (l'')','Jean-Pierre Noverraz','Jean-Pierre Noverraz',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key c \major \time 4/4 
   << { r2 c''16 b c4 d8 e4 d8 c es2 } \\
      { a,16 g a8 a16 g a8 a16 g a4 b8 c4 b8 a b2 } >> }
@@ -4509,7 +4510,112 @@ De l''ombre de la mort (2x)
 Je ne crains aucun mal
 Car Tu es avec moi (2x)
 C''est Ton bâton et Ta houlette qui me consolent
-L''Eternel est mon berger.','déchiffré','déchiffré',1);
+L''Eternel est mon berger.','déchiffré','déchiffré',NULL,NULL,'Pièce d''ensemble Giron de Corcelles 2011');
+INSERT INTO "memento" VALUES(231,'4VH','Sur le fil','Stéphane Blok','Nicolaï Schlup','Marcel Ott','\new ChoirStaff << \new Staff { \clef "G_8" \key a \major \time 4/4 \partial 4*1
+  << { e,8 a fis4 e8 d e2 r4 b''8 cis d4 cis8 a e4 e8 a fis4 gis8 a } \\ 
+      {  e8 a fis4 e8 d e2 r4 b''8 cis d4 cis8 a e4 e8 a fis4 gis8 a  } >> }
+  \new Staff { \clef F \key a \major 
+  << {  e8 a fis4 e8 d e2 r4 b''8 cis d4 cis8 a e4 e8 a fis4 gis8 a } \\ 
+      {  e8 a fis4 e8 d e2 r4 b''8 cis d4 cis8 a e4 e8 a fis4 gis8 a } >> }>>
+','Sur le fil où je cours
+Ou je cours, ou je tombe, 
+On ne peut sur un fil s''arrêter.
+
+Sur un fil de justesse évité de tomber,
+Trébucher car au fil de nos pas s''en aller.
+
+Sur le fil où je cours
+Ou je cours, ou je tombe, 
+On ne peut sur un fil s''arrêter.
+S''en aller en vitesse pour ne pas trépasser,
+La première maladresse regretter.
+
+Regretter, sur un le fil une question se poser,
+De la tête à nos pieds voir un rêve s''embraser.
+{ Reprise à Sur un fil de justesse ... }
+
+Coda:
+Sur le fil j''ai cessé de courir essouflé.
+Rien ne m''est arrivé si ce n''est.
+Si ce n''est qu''après l''un sur le sol
+L''autre pied, l''autre pied s''est posé.',NULL,'déchiffré',1,NULL,'Compatible avec version choeur mixte');
+INSERT INTO "memento" VALUES(232,'4VH','Autour de la Broye','Jean-Pierre Noverraz','Jean-Pierre Noverraz',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key c \major \time 4/4 
+  << { e8 e g f e4. e8 d e f g d2 b4 b8 b g b c d e2. r8 e  } \\ 
+      { c8 c e d c4. c8 b g f e d2 g4 g8 g d g g g c2. r8 c  } >> }
+  \new Staff { \clef F \key c \major 
+  << { r2 g8 g g4 r2 d8 d d4 d d8 d g d g f g2. r4 } \\ 
+      { r2 c,8 c c4 r2 b8 b b4 b4 g8 g d'' b g b c2. r4  } >> }>>
+','1. Une goutte d''eau plus une goutte d''eau
+Comme le disait ma grand-maman
+Cela donnait évidemment 
+Le premier début de tout cours d''eau
+Ainsi au-dessus de Semsales 
+Notre rivière y prend naissance
+Afin d''arroser d''or pâle
+Ce beau vallon au charme intense.
+
+Refrain:
+C''est notre Broye, c''est notre Broye
+Un trait d''union vivant lien de deux cantons
+C''est notre Broye 
+Qui nous assure un grand succès dans nos cultures
+C''est notre Broye, c''est notre Broye qui tout en bas, 
+Qui tout en bas remplit le beau lac de Morat
+
+2. Car les Fribourgeois comme bien sûr les Vaudois
+Lui vouent toujours un soin jaloux
+Calmant son cours dans ses excès
+Le corrigeant quand il le fallait
+Et c''est ainsi que nous l''aimons
+Quand sur ses rives nous dégustons 
+Un petit blanc bien polisson
+Et de Payerne, un saucisson.
+Refrain
+',NULL,'déchiffré',1,NULL,'Pièce d''ensemble Giron de Corcelles 2011');
+INSERT INTO "memento" VALUES(233,'4VH','Suisse',NULL,'Nicolaï Schlup',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key as \major \time 4/4 \partial 4*1
+  << { r4 c2 es4 as, bes4. as8 bes4. es8 es4. es8 des4 bes  } \\ 
+      { r4 as2 as4 as bes8. bes16 des8. c16 es2 es,4 es f des'' } >> }
+  \new Staff { \clef F \key as \major 
+  << { r4 es,4. es8 es4 as as4. es8 g2 c4. c8 bes4. bes8  } \\ 
+      { es,4 as4. es8 c4 f es f es es as, bes8 c des4 es  } >> }>>
+','1. [Baryton A]
+Sur nos monts quand le soleil,
+Et prédit d''un plus beau jour
+Et chantons en choeur le pays Romand,
+Heureux les coeurs qui chantent.
+
+2. [Ténors 1 A]
+Terre où j''ai vu le jour,
+Déjà la voix puissante,
+A toi s''élève un chant d''amour,
+De tout notre coeur et tout simplement.
+
+3. [Basses A]
+Quel est ce pays merveilleux,
+Que je chéris où je suis né.
+Le peuple des bergers est libre sur la terre,
+Terre qui préside à nos destins.
+
+4. [Ténors 2 A]
+Terre qui préside à nos destins,
+Annonce un brillant réveil
+Heureux les coeurs qui chantent
+Le peuple des bergers est libre sur la terre.
+
+5. [Ténors 1 B]
+b.f.
+In excelsis Deo
+
+6. [Ténors 2 B]
+Pays, pays, pays, pays
+
+7. [Basses B]
+Le fleuve coule comme le vent
+Le temps s''arrête le fleuve coule
+Et c''est un lac au pied des roches.
+
+
+',NULL,'déchiffré',1,NULL,'Tous les couplets se chantent en même temps, gros méli-mélo.');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('memento',230);
+INSERT INTO "sqlite_sequence" VALUES('memento',233);
 COMMIT;
