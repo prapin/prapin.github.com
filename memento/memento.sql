@@ -920,10 +920,10 @@ Et j’irai comme un enfant s’endort
 Vers un ciel qui te ressemblera,
 Vers un ciel qui te ressemblera.',NULL,'répertoire',NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(51,'4VH','Pays que j''aime (le)','Emile Gardaz','Robert Mermoud',NULL,'\new ChoirStaff 
-<<  \new Staff { \clef "G_8" \key d \minor \time 2/2 \partial 4*2
+<<  \new Staff { \clef "G_8" \key f \major \time 2/2 \partial 4*2
 	<< { a4 bes c2 f4 es d2 g4 f e d e2 f c4 c } \\ 
 	   { f,4 g a2 c c bes4 a g f g2 a g4 a } >> }
-	\new Staff { \clef F \key d \minor
+	\new Staff { \clef F \key f \major
 	<< { f4 g a2 c c bes4 a g f g2 a g4 c } \\ 
 	   { r2 f,4 f a, a bes2 g4 g c c c2 f e4 e } >> }
 >>','Refrain:
@@ -1441,7 +1441,43 @@ Refrain
 ','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(90,'4VM','Chanson des regrets',NULL,NULL,NULL,'\new Staff { \clef F \key f \minor \time 2/4 \partial 4*1
     f,8 g aes4 g8 f c''4 c r r8 
-	<< { c8 es des c des } \\ { c8 g f e f } >> }',NULL,'ancien',NULL,NULL,NULL,NULL);
+	<< { c8 es des c des } \\ { c8 g f e f } >> }','1. Que font-ils au village?
+Les bêtes sont rentrées, 
+Au loin roule un orage,
+Le renard est au pré.
+Ont-ils fauché les blés, 
+Nous ont-ils oublié?
+Je suis du pays de la longue attente, 
+Quand Pâques s''attarde en chemin. 
+Je suis du pays au bord de la pente, 
+La brume le cache au matin.
+
+2. Que font-ils au village?
+C''est l''heure du laitier, 
+Un oiseau de passage 
+Les a-t-il alertés?
+Que font-ils au village?
+Ont-ils rentré les blés? 
+Nous ont-ils oubliés?
+Je suis du pays où les gens vieillissent 
+Plus tôt qu''aux pays d''alentour. 
+Il faudrait qu''un jour la terre me nourrisse, 
+Alors je reviens aux labours.
+
+3. Que font-ils au village?
+Les vieilles ont reprisé 
+Les habits de lainage 
+Qu''on avait méprisés.
+Que font-ils au village?
+Ont-ils battu les blés?
+Nous ont-ils oubliés?
+Je suis du pays où chacun s''accroche 
+Au mur démoli du jardin. 
+Son coeur est trop plein, mais vides ses poches, 
+Et rare est l''odeur de son pain.
+
+Coda: Que font-ils au village?
+Nous ont-ils oubliés?"','ancien',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(91,'4VM','Chant des saisons (le)','Rémy Gagne','Rémy Gagne','François Provencher','\new Staff { \clef F \key c \major \time 4/4
 	c,8. c16 c8 c c d c d e8. e16 e8 e e f e f  }','1. [B] Quand tout souriant le nouveau-né donne à sa mère son premier baiser
 [TB] Quand l''oiseau de la dernière couvée quitte son nid pour apprendre à voler
@@ -2219,7 +2255,7 @@ Refrain
 Gloire au plus haut des cieux!
 Chantons avec les anges: 
 Paix sur terre en tous lieux!','ancien',NULL,NULL,NULL,NULL);
-INSERT INTO "memento" VALUES(142,'4VM','Partager','Emile Gardaz','Pierre Kaelin',NULL,'\new ChoirStaff 
+INSERT INTO "memento" VALUES(142,'4VM','Partager (Kaelin)','Emile Gardaz','Pierre Kaelin',NULL,'\new ChoirStaff 
 <<  \new Staff { \clef G \key d \minor \time 4/4 \partial 4*1
     << { s4 s1 s2. r8 s8 s1 } 
 	<< { a''4 d4. e8 d4 a c4. d8 c4 s8 a8 c4 bes a g8 f } \\ 
@@ -2540,7 +2576,32 @@ INSERT INTO "memento" VALUES(161,'4VM','Une île au soleil',NULL,NULL,NULL,'\new
 	\new Staff { \clef F \key d \major 
 	<< { a4 a8 a~a2 b4 b8 b~b2 g4 g8 g~g fis g4} \\ 
 	   { d4~d8 fis~fis4 a, e''4~e8 g~g4 b, a~a8 cis~cis4 a } >> }
->>',NULL,'répertoire',NULL,NULL,NULL,NULL);
+>>','Refrain: Ô mon île au soleil
+Paradis entre terre et ciel
+Où le flot, tout le long des jours
+Chante au sable fin sa chanson d''amour
+
+1. Ce n''est qu''une île au grand soleil
+Un îlot parmi tant d''autres pareils
+Où mes parents ont vu le jour
+Où mes enfants naîtront à leur tour
+
+Refrain
+
+2. Au grand matin coiffée de rosée
+Elle a l''air d''une jeune épousée
+Je la regarde et mon fardeau
+Semble aussitôt léger sur mon dos
+
+Refrain
+
+3. Chez nous, la Femme à l''aube est debout
+Coupant la canne ou bien le bambou
+L''homme pêche et tire à son bord
+Un grand filet plein de poissons d''or
+
+Refrain
+','répertoire',NULL,NULL,NULL,NULL);
 INSERT INTO "memento" VALUES(162,'4VM','Un enfant nous dit',NULL,NULL,NULL,'\new ChoirStaff 
 << \new Staff { \clef G \key c \major \time 2/4 
 	<< { c8 d e e e4 \times 2/3 {e8 f g} a8 g g f e4 \times 2/3 {e8 f g} } \\
@@ -4538,7 +4599,7 @@ Coda:
 Sur le fil j''ai cessé de courir essouflé.
 Rien ne m''est arrivé si ce n''est.
 Si ce n''est qu''après l''un sur le sol
-L''autre pied, l''autre pied s''est posé.',NULL,'déchiffré',1,NULL,'Compatible avec version choeur mixte');
+L''autre pied, l''autre pied s''est posé.',NULL,'déchiffré',NULL,NULL,'Compatible avec version choeur mixte');
 INSERT INTO "memento" VALUES(232,'4VH','Autour de la Broye','Jean-Pierre Noverraz','Jean-Pierre Noverraz',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key c \major \time 4/4 
   << { e8 e g f e4. e8 d e f g d2 b4 b8 b g b c d e2. r8 e  } \\ 
       { c8 c e d c4. c8 b g f e d2 g4 g8 g d g g g c2. r8 c  } >> }
@@ -4571,7 +4632,7 @@ Quand sur ses rives nous dégustons
 Un petit blanc bien polisson
 Et de Payerne, un saucisson.
 Refrain
-',NULL,'déchiffré',1,NULL,'Pièce d''ensemble Giron de Corcelles 2011');
+',NULL,'déchiffré',NULL,NULL,'Pièce d''ensemble Giron de Corcelles 2011');
 INSERT INTO "memento" VALUES(233,'4VH','Suisse',NULL,'Nicolaï Schlup',NULL,'\new ChoirStaff << \new Staff { \clef "G_8" \key as \major \time 4/4 \partial 4*1
   << { r4 c2 es4 as, bes4. as8 bes4. es8 es4. es8 des4 bes  } \\ 
       { r4 as2 as4 as bes8. bes16 des8. c16 es2 es,4 es f des'' } >> }
@@ -4615,7 +4676,488 @@ Le temps s''arrête le fleuve coule
 Et c''est un lac au pied des roches.
 
 
-',NULL,'déchiffré',1,NULL,'Tous les couplets se chantent en même temps, gros méli-mélo.');
+',NULL,'déchiffré',NULL,NULL,'Tous les couplets se chantent en même temps, gros méli-mélo.');
+INSERT INTO "memento" VALUES(234,'4VM','N''kosi sikelel''i Afrika','Enooh Sontonga',NULL,NULL,'\new ChoirStaff <<  \new Staff { \clef G \key bes \major \time 4/4 
+  << { bes''8 a bes c d4 d c c bes2 d8 d c d es4 es } \\
+     { f,8 f f f bes4 bes a a f2 bes8 bes a bes c4 c } >> }
+  \new Staff { \clef F \key bes \major 
+    << { d,8 c d es f4 f es es d2 f8 f f f f4 f  } \\
+       { bes,8 bes bes bes bes4 bes f f bes2 bes8 bes bes bes a4 a } >> }>>',NULL,NULL,NULL,NULL,NULL,'Entonner 1 ton ou 1/2 ton plus bas.
+Hymne national d''Afrique du Sud.');
+INSERT INTO "memento" VALUES(235,'4VM','Frime !','Patrick Charles','Fabien Renevey',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key e \minor \time 4/4 
+  << { r8 e g e g4 e g g8 fis~fis4 r r8 e g e g4 e  } \\
+     { r8 e g e g4 e   e e8 dis8~dis4 r4  r8 e g e g4 e } >> }
+  \new Staff { \clef F \key e \minor 
+    << { r8 e, g e g4 g   g bes8 a~a4 r   r8 e g e g4 g } \\
+       { r8 e e e e4 d c c8 b~b4 r  r8 e e e e4 d  } >> }>>',NULL,'actuel',NULL,NULL,NULL,'Failloubaz 2010, choeur d''adolescents');
+INSERT INTO "memento" VALUES(236,'4VM','Comme une boule','Claude Boisseau','Claude Boisseau','Norbert Ott','\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 6/8 \partial 8*3
+  << { d8 e fis g4 g8 b b b g4 g8 b b b d c b b a g } \\
+     { d8 e fis d4 d8 e e e d4 d8 g g g b a g g d d } >> }
+  \new Staff { \clef F \key g \major 
+     d8 d d b4 b8 g g g b4 b8 d d d g, d d g fis e } >>',NULL,'actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(237,'4VM','Garde le soleil...','Edmond Pidoux','Jean Rochat',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key e \major \time 4/4
+  << { e8. e16 e8 fis gis e gis a b1 } \\
+     { e,8. e16 e8 fis gis e gis a b1 } >> }
+  \new Staff { \clef F \key e \major 
+    r1 << { e,,8. e16 e8 fis gis e gis a } \\
+       { e8. e16 e8 fis gis e gis a } >> }>>
+',NULL,'actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(238,'4VM','Chanter c''est lancer des balles','Alain Souchon','Alain Souchon','Muriel Gibala','\new ChoirStaff <<  \new Staff { \clef G \key c \minor \time 3/4
+  << { g''8 f~f4 r8 es ges f~f4 r8 es c4 r2 r r8 g'' bes4 as d,8 f } \\
+     { g8 f~f4 r8 es ges f~f4 r8 es c4 r2 es2. d } >> }
+  \new Staff { \clef F \key c \minor 
+    << { g,8 f~f4 r8 es ges f~f4 r8 es c4 r2 g''2. bes } \\
+       { g8 f~f4 r8 es ges f~f4 r8 es c4 r2 c2. bes } >> }>>
+','1. Chanter, c''est lancer des balles,
+Des ballons qu''on tape
+Pour que quelqu''un les attrape
+Et que ça  bibape loulap''
+Des ballons d''hélium
+Pour faire monter les hommes
+Au-d''ssus
+D''la pluie dans le solarium.
+
+2. Chanter, c''est lancer des balles,
+Casser des verrières
+Et les filles, les seins à l''air,
+Regardent tomber les bouts d''verres,
+Pour qu''elles trouvent not''gage
+De musique et de langage
+Joli, à défaut du visage.
+
+3. Chanter, c''est lancer des balles
+Derrière une vitre
+Pour pas qu''une petite nous quitte
+Ou pour que la vie passe plus vite.
+Seul contre un mur,
+Sur une scène contre nature,
+Ou en se cachant la figure.
+Râper, morose, pour changer les choses
+Et même, en désespoir de cause,
+Des blagues au téléphone
+Pour faire rire les personnes
+Et la mère de Jim Morrison.','actuel',NULL,NULL,'Alain Souchon',NULL);
+INSERT INTO "memento" VALUES(239,'4VM','O terre de mon enfance','Maurice Budry','Carlo Boller',NULL,'\new Staff { \clef G \key f \major  \time 3/4 \partial 4*1
+ c a'' a8 f g bes a4 a f8 a \time 4/4 c4. c8 d4 c8 a \time 3/4 g2 g8 a  }',NULL,'actuel',NULL,NULL,NULL,'Partie du "Pays du lac"');
+INSERT INTO "memento" VALUES(240,'4VM','C''était à l''heure de minuit',NULL,NULL,'Bernard Lallement','\new ChoirStaff <<  \new Staff { \clef G \key g \minor \time 6/4 \partial 4*1
+  << { g''4 bes2 c4 d2 bes4 c bes a g2 g4 bes2 c4 d2 bes4} \\
+     { g4 g2 g4 g2 bes4 a g f d2 d4 g2 a4 bes2 g4 } >> }
+  \new Staff { \clef F \key g \minor 
+    << { g,4 d''2 c4 bes2 d4 f d2 bes bes4 d2 f4 f2 g4 } \\
+       { g,4 g2 a4 bes2 g4 f g d g2 g4 g2 f4 bes,2 es4 } >> }>>',NULL,'actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(241,'4VM','Y''a un grillon dans la maison','Charles Trenet',NULL,'Pierre Huwiler','\new ChoirStaff <<  \new Staff { \clef G \key es \major \time 4/4
+  << {  r8 es g4 r8 f bes4 r8 as es''4 d8. c16 bes8. as16 g2 \times 2/3 { f4 f f } } \\
+     { es2 es es f es \times 2/3 { d4 d d } } >> }
+  \new Staff { \clef F \key es \major 
+    << { g,2 bes as bes bes  \times 2/3 { bes4 bes bes } } \\
+       { es,2 des c bes es  \times 2/3 { as4 as as } } >> }>>','1. Y’a un grillon dans la maison
+Y’a un grillon qui chante une chanson
+Y’a un grillon sous le charbon
+Y’a un grillon qui est beau, qui est bon
+Y’a un grillon qui dit que l’hiver
+C’est un rayon sous un feu de bois vert
+Y’a un grillon qui dit que l’amour
+Ça vient toujours un jour
+Et je suis sorti dans la rue
+Et soudain tu m’es apparue
+Et depuis, depuis ce beau temps
+Nous nous chantons tous deux le coeur content
+
+2. Y’a un grillon dans la maison
+Y’a un grillon qui chante une chanson
+Y’a un grillon sous l’édredon
+Y’a un grillon qui est beau, qui est bon
+Y’a un grillon qui dit que l’hiver
+C’est un rayon sous un feu de bois vert
+Y’a un grillon qui dit que l’amour
+Ça vient toujours un jour
+Et depuis, le temps passe
+Il s’enfuit, s’enfuit dans les glaces
+Mais qu’importe la fuite du temps
+Autour de nous il y a beaucoup d’enfants
+
+3. Y’a des grillons dans la maison
+Y’a des grillons qui chantent des chansons
+Y’a des grillons en toute saison
+Y’a des grillons qui sont beaux, qui sont bons
+Y’a des grillons qui disent que la vie
+C’est un fleuron qui toujours refleurit
+Y’a des grillons qui disent que l’amour
+Ça peut durer toujours
+Y’a des grillons dans la maison
+Y’a même... un négrillon.','actuel',NULL,NULL,'Charles Trenet',NULL);
+INSERT INTO "memento" VALUES(243,'4VM','La queue du chat','Robert Marcy','Robert Marcy','Jacques Grindel','\new ChoirStaff <<  \new Staff { \clef G \key d \minor \time 3/4
+  << { a''2.~a~a bes~bes2 d4 } \\
+     { f,2.~f~f g2.~g2 d4 } >> }
+  \new Staff { \clef F \key d \minor 
+    << { d2.~d~d2 d,4 g8 fis g a bes c d2 bes4 } \\
+       { r2 a4 d,8 cis d e f g a2 d,4~d2.~d  } >> }>>','1. Le médium était concentré
+L''assistance était convulsée
+La table soudain, a remué
+Et l''esprit frappeur a frappé
+
+Refrain: Ce n''est que le petit bout de la queue du chat
+Qui vous électrise
+Ce n''est que le petit bout de la queue du chat
+Qui a fait ce bruit là
+Non l''esprit n''est pas encore là
+Unissons nos fluides
+Et recommençons nos ébats
+Que le chat gâcha.
+
+2. Puis un souffle étrange a passé
+Une ombre au mur s''est profilée
+L''assistance s''est mise à trembler
+Mais le médium a déclaré ...
+
+Refrain: Ce n''est que le petit bout de la queue du chat
+Qui vous électrise
+Ce n''est que le petit bout de la queue du chat
+Qui passait par là.
+Non l''esprit n''est pas encore là
+Unissons nos fluides
+Et recommençons nos ébats
+Que le chat gâcha.
+
+3. Alors en rond on se remit
+Et puis on attendit l''esprit
+Quand une dame poussa un cri
+En disant je le sens c''est lui
+
+Refrain: Ce n''est que le petit bout de la queue du chat
+Qui vous électrise
+Ce n''est que le petit bout de la queue du chat
+Que pensiez-vous là
+L''esprit ne vous aurait pas fait ça
+Vous n''avez pas de fluide
+Le médium alors se fâcha
+Et chassa le chat
+
+Coda: Une voix dit miaou me voilà
+Quelle drôle de surprise
+Car l''esprit s''était caché là
+Dans la queue du... 
+dans la queue du... 
+dans la queue du chat.','actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(244,'4VM','Complainte du phoque en Alaska (la)','Michel Rivard','Michel Rivard','Pierre Huwiler','\new ChoirStaff <<  \new Staff { \clef G \key es \major \time 3/4
+  << { d4 es f bes2 a8. bes16 g4 a bes d2 c8. d16 } \\
+     { d,4 es f g2 fis8. g16 g4 fis g bes2 as8. bes16 } >> }
+  \new Staff { \clef F \key es \major 
+    << { d,4 c bes bes bes2 bes2.~bes4 bes2  } \\
+       { bes,4 c d es g g es2 f4 f2 } >> }>>','1. Cré-moé, cré-moé pas, quéqu'' part en Alaska
+Y a un phoque qui s''ennuie en maudit
+Sa blonde est partie gagner sa vie
+Dans un cirque aux Etats-Unis
+
+Le phoque est tout seul, il r''garde le soleil
+Qui descend doucement sur le glacier
+Il pense aux Etats en pleurant tout bas
+C''est comme ça quand ta blonde t''a lâché
+
+Refrain: Ça vaut pas la peine
+De laisser ceux qu''on aime
+Pour aller faire tourner
+Des ballons sur son nez
+Ça fait rire les enfants
+Ça dure jamais longtemps
+Ça fait plus rire personne
+Quand les enfants sont grands
+
+2. Quand le phoque s''ennuie, il r''garde son poil qui brille
+Comme les rues de New York après la pluie
+Il rêve à Chicago, à Marilyn Monroe
+Il voudrait voir sa blonde faire un show
+
+C''est rien qu''une histoire, j''peux pas m''en faire accroire
+Mais des fois j''ai l''impression qu''c''est moi
+Qui est assis sur la glace les deux mains dans la face
+Mon amour est partie puis j''m''ennuie
+
+Refrain','actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(245,'4VM','Symphorien','René Morax','Gustave Doret',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 2/4
+  << { g''16 g g g fis4 e16 e e e d4 \time 3/4 d16 e g b d8 r4.  } \\
+     {  g,16 g g g fis4 e16 e e e d4 \time 3/4 d16 e g b fis8 r4.  } >> }
+  \new Staff { \clef F \key g \major 
+    << {  g,16 g g g fis4 e16 e e e d4 \time 3/4 d16 e g b c8 r4.  } \\
+       {  g16 g g g fis4 e16 e e e d4 \time 3/4 d16 e g b d,8 r4.  } >> }>>',NULL,'actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(246,'4VM','Enterrement d''une fourmi (l'')','M. Rollinat','Vincent Girod',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key a \minor \time 4/4 \partial 4*1
+  << { e8. a16 c2 b8 a c b a2 r8 e f g  } \\
+     { e8. d16 c4 c8. c16 d4 d c e8. d16 c8 c b a   } >> }
+  \new Staff { \clef F \key a \minor 
+    << { e8. e16 e4 e8. e16 f4 f e e8. e16 e8 a b cis  } \\ 
+       { e,8. e16 a,4 a8. a16 a4 a a e''8. c16 a8 a a a } >> }>>','Les Fourmis sont en grand émoi :
+L’âme du nid, la reine est morte !
+Au bas d’une très vieille porte,
+Sous un chêne, va le convoi.
+
+Le vent cingle sur le sol froid
+La nombreuse et fragile escorte.
+Les fourmis sont en grand émoi :
+L’âme du nid, la reine est morte !
+
+Un tout petit je ne sais quoi
+Glisse, tiré par la plus forte :
+C’est le corbillard qui transporte
+La défunte au caveau du roi.
+
+Les Fourmis sont en grand émoi :
+L’âme du nid, la reine est morte !
+Au bas d’une très vieille porte,
+Sous un chêne, va le convoi.','actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(247,'4VM','Lion est mort ce soir','Henri Salavdor','H. Peretti / L.Cretor / G. Weiss','Pierre Huwiler','\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 4/4
+  << { f4 g8 a4 g8 a4 bes4 a8 g4 f8 g4 a4 c,8 c4 c8 c4 } \\
+     {  f4 g8 a4 g8 a4 bes4 a8 g4 f8 g4 a4 c,8 c4 c8 c4 } >> }
+  \new Staff { \clef F \key f \major 
+    << { c,4 c8 c4 c8 c c c4 c8 c4 c8 c c c4 c8 c4 c8 c c   } \\
+       { c4 c8 c4 c8 c c c4 c8 c4 c8 c c c4 c8 c4 c8 c c } >> }>>','1. Dans la jungle, terrible jungle
+Le lion est mort ce soir
+Et les hommes tranquille s''endorment
+Le lion est mort ce soir
+
+Refrain: Wim o weh...
+
+2. Tout est sage dans le village
+Le lion est mort ce soir
+Plus de rage, plus de carnage
+Le lion est mort ce soir
+
+Refrain
+
+3. L''indomptable, le redoutable
+Le lion est mort ce soir
+Viens ma belle, viens ma gazelle
+Le lion est mort ce soir
+
+Refrain
+','actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(248,'4VM','Bleu et blanc','Maurice Carême','Michel Waeber',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 4/4 
+  << { a''8 a g a c2 d8 d c d a2 } \\
+     { f8 f e f g4 bes8 a f4 e e8 d c bes16 bes } >> }
+  \new Staff { \clef F \key f \major 
+    << { c8 c c c bes2 bes8 bes bes bes a2 } \\
+       { f2 e4 c bes c f2 } >> }>>','[Soprano] Un petit chat bleu
+Semé de pois blancs
+Vit un gros rat blanc
+Semé de pois bleus.
+Leurs mignonnes queues
+Différaient de peu.
+
+[Alto] Oui, mais seulement
+Le nez du chat bleu
+Etait tout tout blanc,
+Le nez du rat blanc
+Etait tout tout bleu. Etait bleu.
+Leurs joues et leurs yeux
+Différaient de peu.
+
+[Ténor] Oui, mais seulement
+Un cil du chat bleu
+Etait tout tout blanc,
+bleu blanc bleu blanc bleu blanc
+Un cil du rat blanc
+Etait tout tout bleu.
+Un cil du rat blanc
+Etait tout bleu tout bleu.
+
+[Basse] A cause de ce peu,
+De ce tout petit peu,
+De ce tout petit peu
+De blanc et de bleu,
+Ils continuèrent
+A se faire la guerre.','actuel',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(249,'4VM','Quand on m''avait dit','Emile Gardaz','Francis Volery',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 3/4 
+  << { d8 b'' b d, d4 e8 b''b e, e4 e8 c'' c e, e4 } \\
+     { d8 e e d d4 e8 d d e e4 e8 g g e e4 } >> }
+  \new Staff { \clef F \key g \major 
+    << { b8 d d b b4 b8 g g b b4 a8 a a a c4 } \\
+       { g8 g g g fis4 e8 e e e d4 c8 c c c a4 } >> }>>',NULL,'répertoire',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(250,'4VM','Comme un soleil','Pierre Delanoë','Michel Fugain','Pierre Huwiler','\new ChoirStaff <<  \new Staff { \clef G \key d \major \time 4/4 
+  << { d2 cis4 d e2. fis8 g a2 e fis1 } \\
+     { d2 cis4 d e2. e8 e e2 e d1 } >> }
+  \new Staff { \clef F \key d \major 
+    << {  d,2 cis4 d b''2. b8 b cis2 cis d1 } \\
+       { d,2 cis4 d g2. e8 e a,2 a'' a1 } >> }>>','Refrain: Comme un soleil, comme une éclaircie
+Comme une fleur que l''on cueille entre les orties
+Elle doit venir, comme vient le beau temps
+Elle doit venir comme vient le printemps
+
+1. Demandez-moi tout ce que vous voulez
+Et sans regrets je vous le donne
+Mais dites-moi où je la trouverai
+Celle qui comprendra, celle qui me dira
+"Où que tu ailles je vais avec toi
+Quel que soit le chemin, je te suis pas à pas"
+Et s''il m''arrivait alors de tomber
+C''est elle qui me relèverait
+
+Refrain
+
+2. Demandez-moi tout ce que vous voulez
+De ne plus jamais voir personne
+De renoncer aux parfums de l''été
+Aux accords de guitare, aux fumées de la gloire
+Demandez-moi de ne plus croire en rien
+Pourvu que je la voie au bout de mon chemin
+Demandez-moi tout ce que vous voulez
+Mais dites-moi où la trouver
+
+Refrain','restes',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(251,'4VM','Partager (Bocherens)','Patrick Bocherens','Patrick Bocherens',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 4/4
+  << { f8 g a4. a8 a g f4 c r8 c d c e2 r8 c8 d c f2. r4 } \\
+     { r1 r r r } >> }
+  \new Staff { \clef F \key f \major 
+    r1 r r r }>>',NULL,'restes',NULL,NULL,NULL,'Chant commun au giron de Broye 2014 à Henniez. Dédié à Florence Berger, directrice du choeur d''Henniez. Le compositeur est décédé quelques mois avant le giron.');
+INSERT INTO "memento" VALUES(252,'4VM','Chemins de la mer (les)','Emile Gardaz','Pierre Kaelin',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 3/4 \partial 8*3
+  << { d8 g a b2 \times 2/3 { b8 c cis} d4 d8 d c c b2 \times 2/3 {a8 b a} } \\
+     { d,8 g a b2 \times 2/3 {g8 a ais}  b4 b8 b a a g2 \times 2/3 {fis8 fis fis}} >> }
+  \new Staff { \clef F \key g \major 
+   d,8 g a b2 \times 2/3 {d,8 e fis} g4 g8 g e e d2 \times 2/3 {c8 d c} }>>','1. J''ai mis mon cœur à la grand''voile 
+et suis parti ; bf.
+Le vent chantait dans les étoiles 
+et suis parti, bf.
+Au bout du monde est une escale,
+J’y descendrai pour mon bonheur ;
+Et le soleil au matin pâle
+M’y recevra comme un seigneur.
+
+Refrain: Les chemins de la mer
+conduiront mon bateau.
+Adieu mon père adieu ma mère,
+Je ne reviendrai pas de sitôt,
+Les chemins de la mer
+conduiront mon bateau.
+Adieu, mon père adieu, ma mère, 
+adieu, vous tous là-haut !
+Oh !
+
+2. Le ciel est bleu dans les cordages 
+et vient midi ; bf.
+Le jour se noie dans mon sillage
+et vient la nuit, bf.
+Au bout du monde est une escale,
+J’y descendrai pour mon bonheur ;
+Et le soleil au matin pâle
+M’y recevra comme un seigneur.
+
+Refrain','répertoire',NULL,NULL,NULL,'Peut se chanter 1/2 ou 1 ton plus haut');
+INSERT INTO "memento" VALUES(253,'4VM','Chanson... (la)','Emile Gardaz','Francis Volery',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key es \major \time 4/4 \partial 4*1
+  << { g''8 bes g2 f8 f f g es2 r8 es8 f g } \\
+     { es8 es es2 f8 f d d c2 r8 es es es } >> }
+  \new Staff { \clef F \key es \major 
+    << { bes8 g c2 d8 d g, g g2 r8 g8 c c } \\
+       { es,8 es as,2 bes8 bes b b c2 r8 c8 c c } >> }>>',NULL,'2015',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(254,'4VM','Armstrong','Claude Nougaro','Traditionnel','Pierre Huwiler','\new ChoirStaff <<  \new Staff { \clef G \key g \minor \time 4/4 
+  << { bes''4 bes a a bes8 bes4. g2 d4 d fis8 fis4. g1  } \\
+     { g4 g fis fis d8 d4. es2 d4 d c8 d4. d2 e } >> }
+  \new Staff { \clef F \key g \minor 
+    << { g,4 d'' c c bes8 g4. c2 bes4 bes a8 c4. bes2 c } \\
+       { g4 g a d, g8 d4. c2 g''4 g a8 a4. g1 } >> }>>','1. Armstrong, je ne suis pas noir,
+Je suis blanc de peau
+Quand on veut chanter l''espoir,
+Quel manque de pot
+Oui, j''ai beau voir le ciel, l''oiseau,
+Rien, rien, rien ne luit là haut
+Les anges... zéro
+Je suis blanc de peau
+
+2. Armstrong, tu te fends la poire
+On voit toutes tes dents
+Moi, je broie plutôt du noir,
+Du noir en dedans
+Chante pour moi, Louis, oh ! oui
+Chante, chante, chante, ça tient chaud
+J''ai froid, oh ! moi
+Qui suis blanc de peau
+
+3. Armstrong, la vie, quelle histoire !
+C''est pas très marrant
+Qu''on l''écrive blanc sur noir
+Ou bien noir sur blanc,
+On voit surtout du rouge, du rouge
+Sang, sang, sans trêve ni repos
+Qu''on soit, ma foi,
+Noir ou blanc de peau
+
+4. Armstrong, un jour, tôt ou tard,
+On n''est que des os...
+Est ce que les tiens seront noirs ?
+Ce serait rigolo
+Allez Louis, alléluia !
+Au delà de nos oripeaux,
+Noir et Blanc
+Sont ressemblants
+Comme deux gouttes d''eau
+Oh Yeah!','2014',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(255,'4VM','Prénoms de Romandie (les)','Emile Gardaz','Pierre Kaelin',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key g \major \time 6/8 \partial 8*1
+  << { d8 b''4 b8 c b c d4. b8 d8 c b4. d8 c b a4. a8 a a } \\
+     { d,8 g4 g8 a g a b4. g8 b a g4. b8 a g d4. d8 d d } >> }
+  \new Staff { \clef F \key g \major 
+    << { d,8 b''4 b8 c b c d4. b8 d c b4. d8 c b a4. a8 a a } \\
+       { d,8 g4 g8 a g a b4. g8 b a g4. b8 a g d4. d8 d d } >> }>>',NULL,'2014',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(256,'4VM','Pays que j''aime (le)','Emile Gardaz','Robert Mermoud',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 2/2 \partial 4*2
+  << { f4 g a2 c c bes4 a g f g2 a g4 c } \\
+     { r2 a4 g f es d2 g4 f e d e2 f c4 c } >> }
+  \new Staff { \clef F \key f \major 
+    << { a4 bes c2 c d d4 c bes c bes2 a c4 c } \\
+       { r2 f,4 f a a bes2 g4 g c, c c2 f e4 e } >> }>>','Refrain:
+Le pays que j''aime nous vient d''autrefois
+Il connut la peine. la nuit et le froid
+Mais l''aube ramène l''audace et la foi
+Le pays que j''aime va droit devant soi. (bis)
+
+1. Emotion, mariage, on vieillissait plus tôt,
+La maison, les ouvrages étaient notre fardeau.
+Il fallait, quand l''orage tombait sur les coteaux
+Veiller sur les berceaux.
+Il fallait du courage pour se lever si tôt.
+Refrain
+
+2. On bêchait notre terre, un jour on l''a vendue.
+On a fait quelques guerres, gagnées, aussi perdues.
+Les chansons de mon père qui nous tombaient dessus
+On ne les chante plus.
+Mes amis de naguère, que sont-ils devenus ?
+Refrain
+
+Coda:
+Droit devant, Droit devant ... Soi. ','-2014',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(257,'4VM','Chanson oubliée','Emile Gardaz','Albert Urfer',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key b \major \time 3/4 \partial 4*1
+  << { fis8 fis fis4 fis8 gis ais b gis4 fis8 r fis fis fis8 gis a b cis dis } \\
+     {fis,8 fis dis4 fis8 fis fis fis e4 e8 r fis fis dis4 fis a! } >> }
+  \new Staff { \clef F \key b \major 
+    << { fis,8 fis b4 dis8 dis dis dis cis4 cis8 r fis,8 fis b4 dis fis} \\
+       { fis,8 fis b,4 b''8 b b b b4 ais8 r fis fis b,4 b'' b } >> }>>',NULL,'2014',NULL,NULL,NULL,NULL);
+INSERT INTO "memento" VALUES(258,'4VM','Que l''on chante qu''on s''apprête','Nicolas Ruffieux','Traditionnel',NULL,'\new ChoirStaff <<  \new Staff { \clef G \key f \major \time 4/4 
+  << { c''4. bes8 a4 g f g a f g8 a bes g a4. g8 f4 e f2 } \\
+     { a4. g8 f4 e d e f c e8 f g e f4. d8 c4 c c2 } >> }
+  \new Staff { \clef F \key f \major 
+    << { c4. c8 c4 bes a c c a c8 c c c c4. bes8 a4 g a2 } \\
+       { f4. e8 f4 c d c f f c8 c c c f4. bes,8 c4 c f2 } >> }>>','1. Que l''on chante qu''on s''apprête
+Fa la la la la la la la la
+Sonnez pipeaux et trompettes
+Fa la la la la la la la la
+Car c''est la joie qu''on apporte
+Fa la la la la la la la la
+Ouvrez donc grandes vos portes
+Fa la la la la la la la la
+
+2. Dans les villes et les villages
+Fa la la la la la la la la
+Répandons notre message
+Fa la la la la la la la la
+Proclamons la joie profonde
+Fa la la la la la la la la
+Que Dieu a donné au monde
+Fa la la la la la la la la
+
+3. Voici les cloches qui sonnent
+Fa la la la la la la la la
+Que le nouvel an nous donne
+Fa la la la la la la la la
+Un coeur rempli de tendresse
+Fa la la la la la la la la
+C''est la plus belle richesse
+Fa la la la la la la la la','2014',NULL,NULL,NULL,'Fait partie de "Deux noëls de joie"');
 DELETE FROM sqlite_sequence;
-INSERT INTO "sqlite_sequence" VALUES('memento',233);
+INSERT INTO "sqlite_sequence" VALUES('memento',258);
 COMMIT;
